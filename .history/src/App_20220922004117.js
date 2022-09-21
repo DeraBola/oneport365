@@ -1,5 +1,5 @@
 import "./App.css";
-import {Router, Switch, Route} from 'react-router-dom';
+import {Router} from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar'
 
 function App() {
@@ -7,9 +7,14 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Switch >
-          <Route path='/' /> 
-        </Switch>
+        <switch (key) {
+          case value:
+            
+            break;
+        
+          default:
+            break;
+        }
       </Router>
     </>
   );

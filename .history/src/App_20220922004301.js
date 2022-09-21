@@ -1,5 +1,5 @@
 import "./App.css";
-import {Router, Switch, Route} from 'react-router-dom';
+import {Router, Switch, } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar'
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
       <Router>
         <Navbar />
         <Switch >
-          <Route path='/' /> 
+          <Route  path='/' /> 
         </Switch>
       </Router>
     </>
