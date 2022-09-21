@@ -4,8 +4,8 @@ function Navbar() {
   return (
     <div>
         <div className="navbar">
-            <link to="#" className='menu-bars'>
-          </link >
+            <link to="#" className='menu-bars' >
+                <link />
         </div>
     </div>
   )

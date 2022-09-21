@@ -4,8 +4,7 @@ function Navbar() {
   return (
     <div>
         <div className="navbar">
-            <link to="#" className='menu-bars'>
-          </link >
+            <link t="stylesheet" href="" />
         </div>
     </div>
   )

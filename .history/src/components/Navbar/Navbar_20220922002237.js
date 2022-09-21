@@ -5,7 +5,7 @@ function Navbar() {
     <div>
         <div className="navbar">
             <link to="#" className='menu-bars'>
-          </link >
+                </link >
         </div>
     </div>
   )
