@@ -1,7 +1,6 @@
 import React from "react";
 import * as FaIcons from "react-icons/fa";
 import { Link } from "react-router-dom";
-import LogoImg from "./"
 
 function Navbar() {
   return (
@@ -14,9 +13,7 @@ function Navbar() {
       <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
         <ul className="nav-menu-items">
           <li className="navbar-toggle">
-              <Link to="#" className="menu-bars">
-              <img src={LogoImg} alt="Logo-Img"/>  
-              </Link>
+              <Link to="#" className="menu-bars"></Link>
           </li>
         </ul>
       </nav>

@@ -7,9 +7,9 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Routes>
+        <Switch >
           <Route path='/' /> 
-        </Routes>
+        </Switch>
       </Router>
     </>
   );
