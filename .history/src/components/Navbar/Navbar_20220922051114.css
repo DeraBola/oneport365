@@ -1,0 +1,15 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #fff;
+    width: 20rem;
+    border-right: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: start;
+    al
+}
