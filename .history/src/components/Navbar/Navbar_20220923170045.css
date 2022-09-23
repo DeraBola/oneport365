@@ -85,7 +85,4 @@ span {
     height: 80px;
     list-style: none;
     margin-bottom: 3rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
 }

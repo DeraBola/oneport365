@@ -4,6 +4,8 @@
     margin: 0;
 }
 
+body {}
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
