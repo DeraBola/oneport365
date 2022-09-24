@@ -1,0 +1,16 @@
+.App {
+    text-align: center;
+}
+
+.dashboard,
+.admin,
+.customers,
+.shipments,
+.tracking,
+.documents,
+.rates,
+.quotes {
+    display: flex;
+    justify-content: center;
+    heg
+}

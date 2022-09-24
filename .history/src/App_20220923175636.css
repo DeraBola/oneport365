@@ -1,0 +1,14 @@
+.App {
+    text-align: center;
+}
+
+.dashboard,
+.admin,
+.customers,
+.shipments,
+.tracking,
+.documents,
+.rates,
+.quotes {
+    display: fles;
+}
