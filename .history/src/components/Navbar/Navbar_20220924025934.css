@@ -9,7 +9,6 @@
     }
     
     .navbar {
-        width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -88,8 +87,4 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-    }
-    
-    @media (max-width:450px) {
-        width: 100%;
     }

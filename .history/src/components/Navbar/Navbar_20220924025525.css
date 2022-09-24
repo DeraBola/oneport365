@@ -9,14 +9,13 @@
     }
     
     .navbar {
-        width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
     
     .menu-bars {
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 2rem;
         background: none;
     }
@@ -88,8 +87,4 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-    }
-    
-    @media (max-width:450px) {
-        width: 100%;
     }
