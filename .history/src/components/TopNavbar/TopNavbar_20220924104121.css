@@ -1,0 +1,51 @@
+.navtop_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 100px;
+    z-index: 1000;
+    position: fixed;
+    top: 0rem;
+    width: 64.5rem;
+    height: 120px;
+    background-color: blue;
+    right: 1rem;
+    flex-direction: start;
+}
+
+.top_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 200px;
+    height: 50px;
+    background-color: blueviolet;
+    padding: 0 10px;
+}
+
+.top_content {
+    position: relative;
+}
+
+.top_content span {
+    position: absolute;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background: red;
+    top: -9px;
+    left: 10px;
+    margin-left: 0px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: px;
+}
+
+.top_content_bell {
+    font-size: 24px;
+}

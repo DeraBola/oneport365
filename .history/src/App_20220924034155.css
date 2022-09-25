@@ -1,0 +1,20 @@
+.App {
+    text-align: center;
+}
+
+.dashboard,
+.admin,
+.customers,
+.shipments,
+.tracking,
+.documents,
+.rates,
+.quotes {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.p__Inter {}

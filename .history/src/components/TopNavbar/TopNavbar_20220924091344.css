@@ -1,0 +1,20 @@
+.navtop_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 112px;
+    z-index: 1000;
+    position: fixed;
+    top: 1.5rem;
+    width: 1061px;
+    right: 20px;
+    height: 130px;
+    background-c: ;
+}
+
+.top_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
