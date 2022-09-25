@@ -3,13 +3,10 @@ import { BsBell } from "react-icons/bs";
 import "./TopNavbar.css";
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
-import OnePort365 from "../../assets/img/Rectangle 184.png";
+import OnePort365 from "../../assets/img/OnePort365 logo.png";
 
 const TopNavbar = ({ title }) => {
 
-useEffect(() => {
-  $( "#speed" ).selectmenu();
-}, []);
 
 
   return(
@@ -26,7 +23,7 @@ useEffect(() => {
       <select name="speed" id="speed">
       <option>Slower</option>
       <option>Slow</option>
-      <option data-left={OnePort365} selected="selected"> Medium</option>
+      <option selected="selected">Medium</option>
       <option>Fast</option>
       <option>Faster</option>
     </select>

@@ -26,7 +26,7 @@ useEffect(() => {
       <select name="speed" id="speed">
       <option>Slower</option>
       <option>Slow</option>
-      <option data-left={OnePort365} selected="selected"> Medium</option>
+      <option data-={OnePort365} selected="selected"> Medium</option>
       <option>Fast</option>
       <option>Faster</option>
     </select>
