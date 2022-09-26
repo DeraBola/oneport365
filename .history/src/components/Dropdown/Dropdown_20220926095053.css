@@ -1,0 +1,18 @@
+.dropdown-menu {
+    width: 200px;
+    position: relative;
+    top: 80px;
+    list-style: none;
+    text-align: start;
+}
+
+.dropdown-menu li {
+    background: green;
+    cursor: pointer;
+}
+
+.dropdown-menu.clicked {
+    display: none;
+}
+
+{}
