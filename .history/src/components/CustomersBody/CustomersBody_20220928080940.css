@@ -1,0 +1,14 @@
+.add_button_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 10px;
+    width: 201px;
+    height: 56px;
+    background: #3AB44A;
+    border-radius: 6px;
+}
+
+.add_button {}
