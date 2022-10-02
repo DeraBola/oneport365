@@ -40,17 +40,11 @@ const CustomersBody = () => {
               </tr>
             </thead>
             <tbody>
-                {customers.map(( customer, id ) => (
-                  <tr key={id}>  
-                <td>{customer.Avatar}{customer.first_name}</td>
-                <td>{customer.last_name}</td>
-                <td>{customer.email}</td>
-                <td>{customer.phone} </td>
-                <td>{customer.is_active} </td>
-                <td>
-                  <div>Shipment</div> <div>Edit</div></td>
-                  </tr>
-                  ))}    
+              <tr>
+                {customers.map(() => )}
+                
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>

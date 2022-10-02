@@ -7,7 +7,7 @@ function Customers() {
   return (
     <> 
     <TopNavbar title="Customers" />
-    <div className='customers_container' ><CustomersBody /></div>
+    <div  className='customers_container' ><CustomersBody /></div>
     </>
     
   )

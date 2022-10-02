@@ -38,7 +38,7 @@ table {
     width: 100%;
 }
 
-tbody tr {
+tr {
     border: 1px solid #E5E7EB;
     background-color: #fff;
 }
@@ -50,10 +50,4 @@ th {
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 1px;
-}
-
-td {
-    padding: .5rem 1rem;
-    font-size: .9rem;
-    color: #000;
 }

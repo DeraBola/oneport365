@@ -41,14 +41,14 @@ const CustomersBody = () => {
             </thead>
             <tbody>
                 {customers.map(( customer, id ) => (
-                  <tr key={id}>  
-                <td>{customer.Avatar}{customer.first_name}</td>
-                <td>{customer.last_name}</td>
-                <td>{customer.email}</td>
-                <td>{customer.phone} </td>
-                <td>{customer.is_active} </td>
+                  <tr>
+                <td>customer.first_name</td>
+                <td>customer.last_name</td>
+                <td>adu.deraj@gmal.com</td>
+                <td>08124969118</td>
+                <td>Sep 03, 2022</td>
                 <td>
-                  <div>Shipment</div> <div>Edit</div></td>
+                  <div>crab</div> <div>bread</div></td>
                   </tr>
                   ))}    
             </tbody>
