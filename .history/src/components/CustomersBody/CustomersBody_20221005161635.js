@@ -28,7 +28,7 @@ const CustomersBody = () => {
         </div>
 
         <div className="tables_container">
-          <table  className="content_table">
+          <table  cla>
             <thead>
               <tr>
                 <th>FIRST NAME</th>

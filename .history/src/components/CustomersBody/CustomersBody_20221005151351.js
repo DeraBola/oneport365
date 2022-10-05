@@ -28,7 +28,7 @@ const CustomersBody = () => {
         </div>
 
         <div className="tables_container">
-          <table  className="content_table">
+          <table>
             <thead>
               <tr>
                 <th>FIRST NAME</th>
@@ -42,7 +42,7 @@ const CustomersBody = () => {
             <tbody>
                 {customers.map(( customer, id ) => (
                   <tr key={id}>  
-                <td> <div className="avatar_image" ><img src={customer.Avatar} alt="avatar_img" /> {customer.first_name}</div> </td>
+                <td> <div className="avatar_img" ><img src={customer.Avatar} alt="avatar_img" /> {customer.first_name}</div> </td>
                 <td>{customer.last_name}</td>
                 <td>{customer.email}</td>
                 <td>{customer.phone} </td>

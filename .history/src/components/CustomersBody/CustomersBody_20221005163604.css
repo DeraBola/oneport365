@@ -80,6 +80,7 @@ tbody tr {
     text-align: center;
     justify-self: start;
     justify-content: space-between;
+    padding: 5px;
 }
 
 .ship-box,
@@ -97,11 +98,11 @@ tbody tr {
 }
 
 .avatar_image {
+    padding: 10px;
     display: flex;
     text-align: center;
     justify-content: space-between;
     flex-direction: start;
-    align-items: center;
 }
 
 .avatar_image img {

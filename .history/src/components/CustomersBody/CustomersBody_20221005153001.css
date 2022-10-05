@@ -45,34 +45,27 @@
 
 table {
     width: 100%;
-    border-collapse: collapse;
-}
-
-thead tr {
-    text-align: left;
 }
 
 tbody tr {
-    background: #fff;
-    text-align: left;
-    border: .1rem solid #E5E7EB;
+    border: 1px solid #E5E7EB;
+    background-color: #fff;
 }
 
-.content_table th {
+th {
     font-weight: 700;
     text-transform: uppercase;
     color: #6B7280;
-    font-size: .9rem;
+    font-size: 12px;
     line-height: 20px;
     letter-spacing: 1px;
-    padding: 12px 10px;
 }
 
-.content_table td {
+td {
+    padding: .5rem 1rem;
     font-size: .9rem;
     color: #000;
     font-weight: 700;
-    padding: 12px 10px;
 }
 
 .ship_edit {
@@ -80,6 +73,7 @@ tbody tr {
     text-align: center;
     justify-self: start;
     justify-content: space-between;
+    padding: 5px;
 }
 
 .ship-box,
@@ -97,11 +91,12 @@ tbody tr {
 }
 
 .avatar_image {
+    padding: 10px;
     display: flex;
     text-align: center;
+    justify-self: start;
     justify-content: space-between;
-    flex-direction: start;
-    align-items: center;
+    padding: 5px;
 }
 
 .avatar_image img {
