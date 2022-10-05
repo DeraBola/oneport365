@@ -51,7 +51,7 @@ const CustomersBody = () => {
                 <td >
                   <div className="ship_edit" >
                     <div className="ship-box">Shipment</div> 
-                   <Link to="/editPage" ><div className="edit-box"> Edit</div></Link> 
+                   <Link to="" ><div className="edit-box"> Edit</div></Link> 
                     </div>
                   </td>
                   </tr>

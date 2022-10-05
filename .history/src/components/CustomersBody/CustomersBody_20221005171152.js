@@ -49,10 +49,7 @@ const CustomersBody = () => {
                 <td>{customer.phone} </td>
                 <td>{customer.is_active}</td>
                 <td >
-                  <div className="ship_edit" >
-                    <div className="ship-box">Shipment</div> 
-                   <Link to="/editPage" ><div className="edit-box"> Edit</div></Link> 
-                    </div>
+                  <div className="ship_edit" ><div className="ship-box">Shipment</div> <div className="edit-box"> Edit</div></div>
                   </td>
                   </tr>
                   ))}    

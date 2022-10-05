@@ -83,7 +83,7 @@ tbody tr {
 }
 
 .ship_edit a {
-    text-decoration: none;
+    text
 }
 
 .ship-box,
@@ -111,5 +111,7 @@ tbody tr {
 .avatar_image img {
     width: 3rem;
     height: 3rem;
+    border-radius: 50%;
+}   height: 3rem;
     border-radius: 50%;
 }

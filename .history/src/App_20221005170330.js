@@ -10,7 +10,7 @@ import Documents from "./pages/Documents";
 import Rates from "./pages/Rates";
 import Quotes from "./pages/Quotes";
 import Invoices from "./pages/Invoices";
-import EditPage from "./pages/EditPage";
+import EditPage from "./pages/";
 
 function App() {
   return (
@@ -26,8 +26,7 @@ function App() {
           <Route path="/documents" element={<Documents />} />
           <Route path="/rates" element={<Rates />} />
           <Route path="/quotes" element={<Quotes />} />
-          <Route path="/invoices" element={<Invoices />} />  
-           <Route path="/editPage" element={<EditPage />} />
+          <Route path="/invoices" element={<Invoices />} />
         </Routes>
       </Router>
     </>

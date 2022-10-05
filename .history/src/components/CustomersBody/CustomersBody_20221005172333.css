@@ -82,9 +82,7 @@ tbody tr {
     justify-content: space-between;
 }
 
-.ship_edit a {
-    text-decoration: none;
-}
+.ship_edit a{}
 
 .ship-box,
 .edit-box {
