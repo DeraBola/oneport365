@@ -1,0 +1,57 @@
+.App {
+    text-align: center;
+}
+
+.dashboard,
+.admin,
+.customers,
+.shipments,
+.tracking,
+.documents,
+.rates,
+.quotes {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.p__Inter {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+section {
+    min-height: calc(100vh - 90px);
+    padding: 2rem;
+    margin-top: 8rem;
+}
+
+.customers_container {
+    width: calc(100% - 20rem);
+    margin-left: 20rem;
+}
+
+@media (max-width: 768px) {
+    .customers_container {
+        width: 100%;
+        margin-left: 5rem;
+    }
+    .p__Inter {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        align-items: center;
+        letter-spacing: -0.02em;
+        color: #000000;
+    }
+}
