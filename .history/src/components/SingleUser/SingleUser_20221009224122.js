@@ -7,19 +7,18 @@ import "./SingleUser.css";
 function SingleUser() {
   const params = useParams();
 
-  const [users, setusers] = useState([])
+  const [users, setusers] = useState([]);
+
+  const getUserRequest = async () => {
+    const url = `https://demo3522726.mockable.io/get_customers/${params.id}` ;
+    const response = await fetch(url);
+    const responseJson = await response.json();
+    setusers(responseJson);
+    console.log(responseJson);
+  };
 
   useEffect(() => {
-    
-    const getUserRequest = async () => {
-      const url = `https://demo3522726.mockable.io/get_customers/${params.id}` ;
-      const response = await fetch(url);
-      const responseJson = await response.json();
-      setusers(responseJson);
-      console.log(responseJson);
-    };
-
-    getUserRequest();
+    getCustomersRequest();
     console.log("params", params);
   }, [params]);
 
