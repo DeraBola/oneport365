@@ -11,10 +11,16 @@ function SingleUser() {
 
   useEffect(() => {
 
-    const getUserRequest = `https://demo3522726.mockable.io/get_customers/${params.id}`
-       fetch(getUserRequest)
-      .then((response) => response.json())
-      .then((json) => setusers(json)) 
+    const getUserRequest = async () => {
+      const url = `https://demo3522726.mockable.io/get_customers/${params.id}` ;
+      const response = await fetch(url);
+      const responseJson = await response.json();
+      setusers(responseJson);
+      console.log(responseJson);
+    };
+
+    getUserRequest();
+    console.log("params", params);
   }, [params]);
 
   return (
@@ -29,22 +35,22 @@ function SingleUser() {
               </div>
             </Link>
             {
-             users && (
-              <div className="card" key={users.id}>
+             user && {
+              <div className="card" key={user.id}>
                 <div className="image">
-                  <img src={users.Avatar} alt="" />
+                  <img src={user.Avatar} alt="" />
                 </div>
                 <div className="card_content">
                   <h3>
-                    {users.first_name}
-                    {users.last_name}
+                    {user.first_name}
+                    {user.last_name}
                   </h3>
-                  <h4>{users.email}</h4>
-                  <h4>{users.phone}</h4>
+                  <h4>{user.email}</h4>
+                  <h4>{user.phone}</h4>
                 </div>
                 <div className="card_edit">Edit</div>
               </div>
-             )}
+             }
           </div>
           <div className="singleuser_middle"></div>
           <div className="singleuser_bottom"></div>

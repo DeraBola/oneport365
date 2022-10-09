@@ -11,10 +11,15 @@ function SingleUser() {
 
   useEffect(() => {
 
-    const getUserRequest = `https://demo3522726.mockable.io/get_customers/${params.id}`
-       fetch(getUserRequest)
-      .then((response) => response.json())
-      .then((json) => setusers(json)) 
+    const getUserRequest = `https://demo3522726.mockable.io/get_customers/${params.id}` ;
+       fetch(getUserRequest);
+      .then(responseJson = await response.json();
+      setusers(responseJson);
+      console.log(responseJson);
+    };
+
+    getUserRequest();
+    console.log("params", params);
   }, [params]);
 
   return (

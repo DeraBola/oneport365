@@ -11,7 +11,7 @@ function SingleUser() {
 
   useEffect(() => {
 
-    const getUserRequest = `https://demo3522726.mockable.io/get_customers/${params.id}`
+    const getUserRequest = `https://demo3522726.mockable.io/get_customers/${params.id}` ;
        fetch(getUserRequest)
       .then((response) => response.json())
       .then((json) => setusers(json)) 
