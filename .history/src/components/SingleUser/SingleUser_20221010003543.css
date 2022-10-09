@@ -26,12 +26,16 @@
 
 .arrow {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 8px;
+    gap: 10px;
     position: absolute;
     width: 39px;
     height: 39px;
+    left: 432px;
+    top: 199px;
     background: #F9FAFB;
     border-radius: 24px;
 }
