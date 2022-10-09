@@ -1,0 +1,14 @@
+.singleuser_container {}
+
+.singleuser_top a {
+    text-decoration: none;
+    color: #6b7280;
+    font-size: 24px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.arrow a {}
