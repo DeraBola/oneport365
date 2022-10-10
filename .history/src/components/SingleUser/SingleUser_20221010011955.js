@@ -5,18 +5,19 @@ import TopNavbar from "../TopNavbar/TopNavbar";
 import "./SingleUser.css";
 
 function SingleUser() {
-  const {id} = useParams();
+  const params = useParams();
 
   const [users, setusers] = useState([])
-   
+  curl --location --request GET ''
+
   useEffect(() => {
 
-    const getUserRequest = `https://demo3522726.mockable.io/get_customers/${id}`
+    const getUserRequest = `https://demo3522726.mockable.io/get_single_customer/123456789  `
        fetch(getUserRequest)
       .then((response) => response.json())
       .then((json) => setusers(json)) 
       console.log("response.json")
-  }, [ id ] );
+  }, [params]);
 
   return (
     <>
