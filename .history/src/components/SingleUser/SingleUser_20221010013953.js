@@ -5,17 +5,17 @@ import TopNavbar from "../TopNavbar/TopNavbar";
 import "./SingleUser.css";
 
 function SingleUser() {
-  const {id} = useParams( );
+  const {id} = useParams();
 
   const [users, setusers] = useState([])
    
-  useEffect(() => { 
+  useEffect(() => {
 
-  const getUserRequest = `https://demo3522726.mockable.io/get_single_customer/123456789?/${id}`
+    const getUserRequest = `https://demo3522726.mockable.io/get_customers?/id=${id}`
        fetch(getUserRequest)
       .then((response) => response.json())
-      .then((json) => {console.log(json);
-        setusers(json)});
+      .then((json) => setusers(json)) 
+      console.log("response.json")
   }, [ id ] );
 
   return (
@@ -31,7 +31,7 @@ function SingleUser() {
             </Link>
             {
              users && (
-              <div className="card"  >
+              <div className="card" key={users.id}>
                 <div className="image">
                   <img src={users.Avatar} alt="" />
                 </div>
@@ -45,7 +45,7 @@ function SingleUser() {
                 </div>
                 <div className="card_edit">Edit</div>
               </div>
-            )}
+             )}
           </div>
           <div className="singleuser_middle"></div>
           <div className="singleuser_bottom"></div>

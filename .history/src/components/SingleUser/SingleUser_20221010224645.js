@@ -29,23 +29,22 @@ function SingleUser() {
                 <BiArrowBack />
               </div>
             </Link>
-            {
-             users && (
-              <div className="card"  >
+             user &&
+              <div className="card" key={id}>
                 <div className="image">
-                  <img src={users.Avatar} alt="" />
+                  <img src={user.Avatar} alt="" />
                 </div>
                 <div className="card_content">
                   <h3>
-                    {users.first_name}
-                    {users.last_name}
+                    {user.first_name}
+                    {user.last_name}
                   </h3>
-                  <h4>{users.email}</h4>
-                  <h4>{users.phone}</h4>
+                  <h4>{user.email}</h4>
+                  <h4>{user.phone}</h4>
                 </div>
                 <div className="card_edit">Edit</div>
               </div>
-            )}
+            ))}
           </div>
           <div className="singleuser_middle"></div>
           <div className="singleuser_bottom"></div>

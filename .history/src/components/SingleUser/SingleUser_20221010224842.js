@@ -29,9 +29,9 @@ function SingleUser() {
                 <BiArrowBack />
               </div>
             </Link>
-            {
+            
              users && (
-              <div className="card"  >
+              <div className="card" key={id}>
                 <div className="image">
                   <img src={users.Avatar} alt="" />
                 </div>

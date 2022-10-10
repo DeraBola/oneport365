@@ -9,9 +9,9 @@ function SingleUser() {
 
   const [users, setusers] = useState([])
    
-  useEffect(() => { 
+  useEffect(() => {
 
-  const getUserRequest = `https://demo3522726.mockable.io/get_single_customer/123456789?/${id}`
+    const getUserRequest = `https://demo3522726.mockable.io/get_customers?/${id}`
        fetch(getUserRequest)
       .then((response) => response.json())
       .then((json) => {console.log(json);
@@ -29,15 +29,14 @@ function SingleUser() {
                 <BiArrowBack />
               </div>
             </Link>
-            {
-             users && (
-              <div className="card"  >
+            {users.map(( user, id ) => (
+              <div className="card" key={id}>
                 <div className="image">
-                  <img src={users.Avatar} alt="" />
+                  <img src={user.Avatar} alt="" />
                 </div>
                 <div className="card_content">
                   <h3>
-                    {users.first_name}
+                    {user.first_name}
                     {users.last_name}
                   </h3>
                   <h4>{users.email}</h4>
@@ -45,7 +44,7 @@ function SingleUser() {
                 </div>
                 <div className="card_edit">Edit</div>
               </div>
-            )}
+             )}
           </div>
           <div className="singleuser_middle"></div>
           <div className="singleuser_bottom"></div>
