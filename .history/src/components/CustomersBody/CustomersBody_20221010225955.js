@@ -5,6 +5,8 @@ import "./CustomersBody.css";
 
 const CustomersBody = () => {
   const [customers, setCustomers] = useState([]);
+  
+  const [id, setid] = useState('');
 
   const getCustomersRequest = async () => {
     const url = "https://demo3522726.mockable.io/get_customers";
@@ -41,8 +43,8 @@ const CustomersBody = () => {
               </tr>
             </thead>
             <tbody>
-                {customers.map(( customer) => (
-                  <tr key={customer.id}  >  
+                {customers.map(( customer, id ) => (
+                  <tr key={id}>  
                 <td> <div className="avatar_image" ><img src={customer.Avatar} alt="avatar_img" /> {customer.first_name}</div> </td>
                 <td>{customer.last_name}</td>
                 <td>{customer.email}</td>

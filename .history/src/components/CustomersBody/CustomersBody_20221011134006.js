@@ -6,6 +6,8 @@ import "./CustomersBody.css";
 const CustomersBody = () => {
   const [customers, setCustomers] = useState([]);
 
+ 
+
   const getCustomersRequest = async () => {
     const url = "https://demo3522726.mockable.io/get_customers";
 

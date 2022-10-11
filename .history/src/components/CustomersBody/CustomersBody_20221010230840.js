@@ -6,6 +6,8 @@ import "./CustomersBody.css";
 const CustomersBody = () => {
   const [customers, setCustomers] = useState([]);
 
+  const [userid, setuserid] = useState('');
+
   const getCustomersRequest = async () => {
     const url = "https://demo3522726.mockable.io/get_customers";
 
@@ -41,8 +43,8 @@ const CustomersBody = () => {
               </tr>
             </thead>
             <tbody>
-                {customers.map(( customer) => (
-                  <tr key={customer.id}  >  
+                {customers.map(( customer, id ) => (
+                  <tr key={id} onClick={() => setuserid(customer.id )} >  
                 <td> <div className="avatar_image" ><img src={customer.Avatar} alt="avatar_img" /> {customer.first_name}</div> </td>
                 <td>{customer.last_name}</td>
                 <td>{customer.email}</td>
@@ -50,7 +52,7 @@ const CustomersBody = () => {
                 <td>-</td>
                 <td >
                   <div className="ship_edit" >
-                  <Link to={`/singleuser/${customer.id}`}> <div className="ship-box">Shipment</div> </Link> 
+                  <Link to={`/singleuser/${userid}`}> <div className="ship-box">Shipment</div> </Link> 
                   <div className="edit-box"> Edit</div>
                     </div>
                   </td>

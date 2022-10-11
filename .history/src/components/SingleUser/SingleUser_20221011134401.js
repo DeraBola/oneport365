@@ -34,14 +34,14 @@ function SingleUser() {
               <div className="card" key={users.id} >
                 <div className="image">
                   <img src={users.Avatar} alt="" />
-                  <div className="card_content">
+                </div>
+                <div className="card_content">
                   <h3>
                     {users.first_name}
                     {users.last_name}
                   </h3>
                   <h4>{users.email}</h4>
                   <h4>{users.phone}</h4>
-                </div>
                 </div>
                 <div className="card_edit">Edit</div>
               </div>

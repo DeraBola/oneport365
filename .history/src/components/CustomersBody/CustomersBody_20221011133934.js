@@ -6,6 +6,8 @@ import "./CustomersBody.css";
 const CustomersBody = () => {
   const [customers, setCustomers] = useState([]);
 
+  const [userid, setuserid] = useState('');
+
   const getCustomersRequest = async () => {
     const url = "https://demo3522726.mockable.io/get_customers";
 
@@ -50,7 +52,7 @@ const CustomersBody = () => {
                 <td>-</td>
                 <td >
                   <div className="ship_edit" >
-                  <Link to={`/singleuser/${customer.id}`}> <div className="ship-box">Shipment</div> </Link> 
+                  <Link to={`/singleuser/${customer.id} `}> <div className="ship-box">Shipment</div> </Link> 
                   <div className="edit-box"> Edit</div>
                     </div>
                   </td>

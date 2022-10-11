@@ -43,6 +43,7 @@ function SingleUser() {
                   <h4>{users.phone}</h4>
                 </div>
                 </div>
+                
                 <div className="card_edit">Edit</div>
               </div>
             )}
