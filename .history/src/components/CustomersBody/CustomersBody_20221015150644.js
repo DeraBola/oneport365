@@ -50,7 +50,7 @@ const CustomersBody = () => {
                 <td>-</td>
                 <td >
                   <div className="ship_edit" >
-                  <Link to={`/singleuser/${customer.id}${customer._id}`}> <div className="ship-box">Shipment</div> </Link> 
+                  <Link to={`/singleuser/${customer.id}/${ustomer.shipmentid }`}> <div className="ship-box">Shipment</div> </Link> 
                   <div className="edit-box"> Edit</div>
                     </div>
                   </td>

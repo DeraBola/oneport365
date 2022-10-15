@@ -8,7 +8,7 @@ import Axios from "axios";
 import "./SingleUser.css";
 
 function SingleUser() {
-  const { id, shipmentid } = useParams();
+  const { id,  } = useParams();
 
   const [users, setusers] = useState([]);
 
@@ -26,14 +26,14 @@ function SingleUser() {
 
   useEffect(() => {
     Axios.get(
-      `https://demo3522726.mockable.io/get_single_customer_shipments/123456789?/${shipmentid}`
+      `https://demo3522726.mockable.io/get_single_customer_shipments/123456789?/${id}`
     )
       .then((res) => {
         console.log(res.data);
         setSingleshipment(res.data);
       })
       .catch((err) => console.log(err));
-  }, [shipmentid]);
+  }, [id]);
 
   return (
     <>
@@ -102,7 +102,7 @@ function SingleUser() {
           </div>
           <div className="singleuser_bottom">
             {singleshipment && (
-              <table className="content_table" key={singleshipment._id}>
+              <table className="content_table" key={singleshipment.id}>
                 <thead>
                   <tr>
                     <th>SHIPMENT TYPE</th>

@@ -47,7 +47,7 @@ function SingleUser() {
               </div>
             </Link>
             {users && (
-              <div className="card" key={users.id}>
+              <div className="card" key={users.shipmentid}>
                 <div className="card_content">
                   <div className="card_image">
                     <img src={users.Avatar} alt="" />
@@ -102,7 +102,7 @@ function SingleUser() {
           </div>
           <div className="singleuser_bottom">
             {singleshipment && (
-              <table className="content_table" key={singleshipment._id}>
+              <table className="content_table" key={singleshipment.id}>
                 <thead>
                   <tr>
                     <th>SHIPMENT TYPE</th>

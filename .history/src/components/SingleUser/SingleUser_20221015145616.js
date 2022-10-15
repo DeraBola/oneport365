@@ -102,7 +102,7 @@ function SingleUser() {
           </div>
           <div className="singleuser_bottom">
             {singleshipment && (
-              <table className="content_table" key={singleshipment._id}>
+              <table className="content_table" key={singleshipment.id}>
                 <thead>
                   <tr>
                     <th>SHIPMENT TYPE</th>

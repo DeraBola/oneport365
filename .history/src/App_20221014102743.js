@@ -27,7 +27,7 @@ function App() {
           <Route path="/rates" element={<Rates />} />
           <Route path="/quotes" element={<Quotes />} />
           <Route path="/invoices" element={<Invoices />} />  
-           <Route path="/singleuser/:id/:shipmentid" element={<SingleUser />} />
+           <Route path="/singleuser/:id" element={<SingleUser />} />
         </Routes>
       </Router>
     </>
