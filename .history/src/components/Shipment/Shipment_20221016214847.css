@@ -1,0 +1,35 @@
+.destination {
+    display: flex;
+    flex-flow: column;
+    padding: 1rem 1rem;
+    align-items: flex-start;
+}
+
+.shipment_type {
+    width: 58px;
+    height: 28px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    background: transparent;
+}
+
+.destination_code {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    align-items: center;
+    color: #000000;
+    background: transparent;
+}
+
+.destination_country {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    color: #6B7280;
+}

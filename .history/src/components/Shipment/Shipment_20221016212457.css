@@ -1,0 +1,48 @@
+.destination {
+    display: flex;
+    flex-flow: column;
+    padding: 1rem 1rem;
+    align-items: flex-start;
+}
+
+.shipment_type {
+    width: 58px;
+    height: 28px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    background: transparent;
+}
+
+.destination_code {
+    height: 28px;
+    width: 64px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    align-items: center;
+    color: #000000;
+    background: transparent;
+}
+
+.destination_country {
+    width: 56px;
+    height: 20px;
+    left: 665px;
+    top: 741px;
+    /* Paragraph/Small/Semibold */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'salt' on;
+    /* Neutral/500 */
+    color: #6B7280;
+}

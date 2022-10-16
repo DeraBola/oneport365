@@ -1,0 +1,9 @@
+.shipment_content_table th {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6B7280;
+    font-size: .7rem;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+}

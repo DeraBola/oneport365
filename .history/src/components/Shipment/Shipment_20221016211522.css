@@ -1,0 +1,19 @@
+.destination {
+    display: flex;
+    flex-flow: column;
+    padding: 1rem 1rem;
+    align-items: flex-start;
+}
+
+.shipment_type {
+    height: 28px;
+    width: 64px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    align-items: center;
+    color: #000000;
+    background: transparent;
+}
+
+.destination_code {}

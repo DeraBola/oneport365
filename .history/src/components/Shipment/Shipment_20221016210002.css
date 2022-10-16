@@ -1,0 +1,22 @@
+.destination {
+    display: flex;
+    flex-flow: column;
+    padding: 1rem 1rem;
+    align-items: flex-start;
+}
+
+.shipment_type {
+    width: 64px;
+    height: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'salt' on;
+    /* Generic/Black */
+    color: #000000;
+}
