@@ -50,6 +50,7 @@ table {
 
 thead tr {
     text-align: left;
+    display: table-header-group;
 }
 
 tbody tr {

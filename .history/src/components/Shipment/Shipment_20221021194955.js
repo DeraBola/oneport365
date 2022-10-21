@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import Rectangle from "../../assets/img/Line 18.png";
 import Ecllipse from "../../assets/img/Ellipse 19.png";
-import Arrowup from "../../assets/img/Icon (1).png";
-import Arrowdown from "../../assets/img/Icon (1).png";
 import Axios from "axios";
 import "./Shipment.css";
 
@@ -22,8 +20,8 @@ const Shipment = () => {
       })
       .catch((err) => console.log(err));
   }, [shipmentid]);
-
-  const shipmentImage = "import";
+  
+  const shipment = "import";
 
   return (
     <div className="tables_container">
@@ -43,11 +41,8 @@ const Shipment = () => {
           {shipments.map((shipment) => (
             <tr key={shipment._id}>
               <td>
-                {shipmentImage === "import" ? (
-                  <div className="shipping_type"><img src={Arrowup} alt="arrowup" />{shipment.shipping_type}</div>
-                ) : (
-                  <div className="shipping_type"><img src={Arrowdown} alt="arrowup" />{shipment.shipping_type}</div>
-                )}
+                {shipment ===}
+                <div className="shipping_type">{shipment.shipping_type}</div>
               </td>
               <td>
                 <div className="origin">
@@ -58,6 +53,7 @@ const Shipment = () => {
                 </div>
               </td>
               <td>
+                 
                 <div className="rect_image">
                   <img src={Ecllipse} alt="Ecllipse" />
                   <img src={Rectangle} alt="rectangle" />
@@ -65,17 +61,14 @@ const Shipment = () => {
                 </div>
               </td>
               <td>
+              
                 <div className="destination">
                   <div className="destination_code">
                     {shipment.destination_port_code}
                   </div>
                   <div className="destination_country">
-                    <div className="destination_city">
-                      {shipment.destination_port_city},
-                    </div>
-                    <div className="destination_country">
-                      {shipment.destination_port_country}{" "}
-                    </div>
+                   <div className="destination_city">{shipment.destination_port_city},</div> 
+                   <div className="destination_country">{shipment.destination_port_country} </div> 
                   </div>
                 </div>
               </td>

@@ -46,7 +46,7 @@ const Shipment = () => {
                 {shipmentImage === "import" ? (
                   <div className="shipping_type"><img src={Arrowup} alt="arrowup" />{shipment.shipping_type}</div>
                 ) : (
-                  <div className="shipping_type"><img src={Arrowdown} alt="arrowup" />{shipment.shipping_type}</div>
+                  <div className="shipping_type"><img src={Arrowdwn} alt="arrowup" />{shipment.shipping_type}</div>
                 )}
               </td>
               <td>

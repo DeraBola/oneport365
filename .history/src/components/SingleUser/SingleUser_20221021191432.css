@@ -193,6 +193,7 @@
     }
     
     .single_user_search {
+        display: flex;
         align-items: center;
         background-color: #fff;
         height: 56px;
@@ -200,8 +201,8 @@
         border-radius: 6px;
         padding: 10px 12px;
         border: 1px solid #D1D5DB;
-        display: flex;
-        margin-top: 8.5px;
+        justify-content: center;
+        text-align: center;
     }
     
     .search-icons {
@@ -220,6 +221,6 @@
         margin-left: 10px;
     }
     
-    .single_user_search input:focus {
+    .search input:focus {
         outline: none;
     }

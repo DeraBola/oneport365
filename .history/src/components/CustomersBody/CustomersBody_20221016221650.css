@@ -40,7 +40,7 @@
 
 .tables_container {
     margin-top: 3.5rem;
-    width: 58rem;
+    width: 60rem;
 }
 
 table {
@@ -56,27 +56,24 @@ tbody tr {
     background: #fff;
     text-align: left;
     border: .1rem solid #E5E7EB;
-    text-align: left;
 }
 
 .content_table th {
     font-weight: 700;
     text-transform: uppercase;
+    color: #6B7280;
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 1px;
     padding: 10px 5px;
     white-space: nowrap;
-    color: #6B7280;
 }
 
 .content_table td {
     font-size: .9rem;
     color: #000;
     font-weight: 700;
-    padding: 12px 15px;
-    background: none;
-    width: 50%;
+    padding: 12px 10px;
 }
 
 .ship_edit {

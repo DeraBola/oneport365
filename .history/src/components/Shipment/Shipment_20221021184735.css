@@ -5,7 +5,7 @@
     align-items: flex-start;
 }
 
-div.shipping_type {
+div.shipment_type {
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
@@ -17,7 +17,7 @@ div.shipping_type {
     width: 51px;
 }
 
-div.shipping_date {
+div.shipment_date {
     font-weight: 600;
     align-items: center;
     color: #000000;
@@ -41,15 +41,13 @@ div.shipping_date {
     line-height: 20px;
     align-items: center;
     color: #6B7280;
-    display: flex;
-    flex-direction: column;
 }
 
 .rect_image {
     display: flex;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 30px;
+    height: 20px;
 }
 
 .rect_image img {

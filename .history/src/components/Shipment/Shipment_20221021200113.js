@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import Rectangle from "../../assets/img/Line 18.png";
 import Ecllipse from "../../assets/img/Ellipse 19.png";
 import Arrowup from "../../assets/img/Icon (1).png";
-import Arrowdown from "../../assets/img/Icon (1).png";
+
 import Axios from "axios";
 import "./Shipment.css";
 
@@ -44,9 +44,9 @@ const Shipment = () => {
             <tr key={shipment._id}>
               <td>
                 {shipmentImage === "import" ? (
-                  <div className="shipping_type"><img src={Arrowup} alt="arrowup" />{shipment.shipping_type}</div>
+                  <div className="shipping_type">{shipment.shipping_type}</div>
                 ) : (
-                  <div className="shipping_type"><img src={Arrowdown} alt="arrowup" />{shipment.shipping_type}</div>
+                  <div className="shipping_type">{shipment.shipping_type}</div>
                 )}
               </td>
               <td>

@@ -41,8 +41,6 @@ div.shipping_date {
     line-height: 20px;
     align-items: center;
     color: #6B7280;
-    display: flex;
-    flex-direction: column;
 }
 
 .rect_image {
@@ -50,6 +48,7 @@ div.shipping_date {
     align-items: center;
     width: 4rem;
     height: 4rem;
+    
 }
 
 .rect_image img {

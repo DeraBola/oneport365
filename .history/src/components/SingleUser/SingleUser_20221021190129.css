@@ -180,7 +180,7 @@
     }
     
     div.shipment_type #type,
-    div.shipment_date #type {
+    dv.shipment_date #type {
         font-size: 18px;
         font-weight: 600;
         line-height: 28px;
@@ -193,6 +193,7 @@
     }
     
     .single_user_search {
+        display: flex;
         align-items: center;
         background-color: #fff;
         height: 56px;
@@ -200,8 +201,6 @@
         border-radius: 6px;
         padding: 10px 12px;
         border: 1px solid #D1D5DB;
-        display: flex;
-        margin-top: 8.5px;
     }
     
     .search-icons {
@@ -220,6 +219,6 @@
         margin-left: 10px;
     }
     
-    .single_user_search input:focus {
+    .search input:focus {
         outline: none;
     }

@@ -56,7 +56,6 @@ tbody tr {
     background: #fff;
     text-align: left;
     border: .1rem solid #E5E7EB;
-    text-align: left;
 }
 
 .content_table th {
@@ -74,7 +73,7 @@ tbody tr {
     font-size: .9rem;
     color: #000;
     font-weight: 700;
-    padding: 12px 15px;
+    padding: 12px 10px;
     background: none;
     width: 50%;
 }
