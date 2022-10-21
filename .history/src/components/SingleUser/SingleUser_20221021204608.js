@@ -92,9 +92,8 @@ function SingleUser() {
           </div>
           <div className="singleuser_bottom">
            <Shipment
-           shipments={shipments.filter((shipment) =>
+           shipments={shipment.filter((shipment) =>
            shipment.shipping_type.toLowerCase().includes(searchText)
-           )}
            /> 
         </div>
         </div>

@@ -86,16 +86,12 @@ function SingleUser() {
               <input
                 type="text"
                 placeholder="Search by Shipment,ID,Destination"
-                onChange={(e) => setsearchText(e.target.value)}
+                onChange={(e) =>}
               />
             </div>
           </div>
           <div className="singleuser_bottom">
-           <Shipment
-           shipments={shipments.filter((shipment) =>
-           shipment.shipping_type.toLowerCase().includes(searchText)
-           )}
-           /> 
+           <Shipment /> 
         </div>
         </div>
       </section>
