@@ -73,7 +73,7 @@ const Shipment = (props) => {
                       {shipment.destination_port_city},
                     </div>
                     <div className="destination_country">
-                      {shipment.destination_port_country}{
+                      {shipment.destination_port_country}{" "}
                     </div>
                   </div>
                 </div>

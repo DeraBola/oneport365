@@ -39,7 +39,7 @@ const Shipment = (props) => {
           </tr>
         </thead>
         <tbody>
-          { props.shipments.map((shipment) => (
+          { this.props.shipments.map((shipment) => (
             <tr key={shipment._id}>
               <td>
                 { shipment.shipping_type  === "import" ? (
@@ -73,7 +73,7 @@ const Shipment = (props) => {
                       {shipment.destination_port_city},
                     </div>
                     <div className="destination_country">
-                      {shipment.destination_port_country}{
+                      {shipment.destination_port_country}{" "}
                     </div>
                   </div>
                 </div>

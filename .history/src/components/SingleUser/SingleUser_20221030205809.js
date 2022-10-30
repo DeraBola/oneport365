@@ -95,9 +95,8 @@ function SingleUser () {
             </div>
           </div>
           <div className="singleuser_bottom">
-           <Shipment shipments={shipments.filter((shipment) =>
-            shipment.shipping_type.includes(searchText)||
-            shipment.shipment_pickup_date.includes(searchText)
+           <Shipment shipments={props.shipments.filter((shipment) =>
+            shipment.shipping_type.includes(searchText)
             )}
              /> 
         </div>

@@ -91,7 +91,7 @@ function SingleUser () {
                 type="text"
                 placeholder="Search by Shipment,ID,Destination"
                 onChange = {handleChange}
-              />
+        mm      />
             </div>
           </div>
           <div className="singleuser_bottom">
