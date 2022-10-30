@@ -7,7 +7,7 @@ import Arrowdown from "../../assets/img/Icon.png";
 import Axios from "axios";
 import "./Shipment.css";
 
-const Shipment = (props) => {
+const Shipment = () => {
   const [shipments, setShipments] = useState([]);
 
   const { shipmentid } = useParams();
@@ -39,7 +39,7 @@ const Shipment = (props) => {
           </tr>
         </thead>
         <tbody>
-          { props.shipments.map((shipment) => (
+          { shipments.map((shipment) => (
             <tr key={shipment._id}>
               <td>
                 { shipment.shipping_type  === "import" ? (

@@ -12,6 +12,12 @@ const Shipment = (props) => {
 
   const { shipmentid } = useParams();
 
+  const [searchText, setsearchText] = useState('');
+
+  const props.handleChange = e => {
+setsearchText(e.target.value);
+  };
+
   useEffect(() => {
     Axios.get(
       `https://demo3522726.mockable.io/get_single_customer_shipments/123456789?/${shipmentid}`
@@ -39,7 +45,9 @@ const Shipment = (props) => {
           </tr>
         </thead>
         <tbody>
-          { props.shipments.map((shipment) => (
+          {shipments.filter((shipment) =>
+          shipment.shipping_type.toLowerCase().includes(searchText)
+          ).map((shipment) => (
             <tr key={shipment._id}>
               <td>
                 { shipment.shipping_type  === "import" ? (

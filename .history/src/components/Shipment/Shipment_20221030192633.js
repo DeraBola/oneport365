@@ -8,7 +8,7 @@ import Axios from "axios";
 import "./Shipment.css";
 
 const Shipment = (props) => {
-  const [shipments, setShipments] = useState([]);
+  const [shipments, setShipments] = useState([props]);
 
   const { shipmentid } = useParams();
 

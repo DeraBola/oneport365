@@ -8,7 +8,7 @@ import Axios from "axios";
 import "./Shipment.css";
 
 const Shipment = (props) => {
-  const [shipments, setShipments] = useState([]);
+  const [shipments, setShipments] = useState([props]);
 
   const { shipmentid } = useParams();
 
@@ -39,7 +39,7 @@ const Shipment = (props) => {
           </tr>
         </thead>
         <tbody>
-          { props.shipments.map((shipment) => (
+          { shipments.map((shipment) => (
             <tr key={shipment._id}>
               <td>
                 { shipment.shipping_type  === "import" ? (

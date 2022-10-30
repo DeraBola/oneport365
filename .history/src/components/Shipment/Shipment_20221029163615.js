@@ -7,10 +7,14 @@ import Arrowdown from "../../assets/img/Icon.png";
 import Axios from "axios";
 import "./Shipment.css";
 
-const Shipment = (props) => {
+const Shipment = () => {
   const [shipments, setShipments] = useState([]);
 
   const { shipmentid } = useParams();
+
+  const [searchText, setsearchText] = useState('');
+
+  const handleChange = e=
 
   useEffect(() => {
     Axios.get(
@@ -39,7 +43,9 @@ const Shipment = (props) => {
           </tr>
         </thead>
         <tbody>
-          { props.shipments.map((shipment) => (
+          {shipments.filter((shipment) =>
+          shipment.shipping_type.toLowerCase().includes(searchText)
+          ).map((shipment) => (
             <tr key={shipment._id}>
               <td>
                 { shipment.shipping_type  === "import" ? (

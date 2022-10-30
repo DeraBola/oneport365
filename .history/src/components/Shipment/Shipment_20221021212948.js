@@ -3,11 +3,11 @@ import { Link, useParams } from "react-router-dom";
 import Rectangle from "../../assets/img/Line 18.png";
 import Ecllipse from "../../assets/img/Ellipse 19.png";
 import Arrowup from "../../assets/img/Icon (1).png";
-import Arrowdown from "../../assets/img/Icon.png";
+import Arrowdown from "../../assets/img/Icon (1).png";
 import Axios from "axios";
 import "./Shipment.css";
 
-const Shipment = (props) => {
+const Shipment = ({shipments}) => {
   const [shipments, setShipments] = useState([]);
 
   const { shipmentid } = useParams();
@@ -23,7 +23,8 @@ const Shipment = (props) => {
       .catch((err) => console.log(err));
   }, [shipmentid]);
 
-   
+  const shipmentImage = "import";
+
   return (
     <div className="tables_container">
       <table className="content_table">
@@ -39,10 +40,10 @@ const Shipment = (props) => {
           </tr>
         </thead>
         <tbody>
-          { props.shipments.map((shipment) => (
+          {shipments.map((shipment) => (
             <tr key={shipment._id}>
               <td>
-                { shipment.shipping_type  === "import" ? (
+                {shipmentImage === "import" ? (
                   <div className="shipping_type"><img src={Arrowup} alt="arrowup" />{shipment.shipping_type}</div>
                 ) : (
                   <div className="shipping_type"><img src={Arrowdown} alt="arrowup" />{shipment.shipping_type}</div>

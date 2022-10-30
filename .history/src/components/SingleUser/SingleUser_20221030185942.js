@@ -14,10 +14,6 @@ function SingleUser ({ handleChange }) {
 
   const [searchText, setsearchText] = useState('');
 
-  const handleChange = e => {
-    setsearchText(e.target.value);
-      };
-
   useEffect(() => {
     const getUserRequest = `https://demo3522726.mockable.io/get_single_customer/123456789?/${id}`;
     fetch(getUserRequest)
@@ -95,10 +91,7 @@ function SingleUser ({ handleChange }) {
             </div>
           </div>
           <div className="singleuser_bottom">
-           <Shipment shipments={shipments.filter((shipment) =>
-            shipment.shipping_type.includes(searchText)
-            )}
-             /> 
+           <Shipment  /> 
         </div>
         </div>
       </section>

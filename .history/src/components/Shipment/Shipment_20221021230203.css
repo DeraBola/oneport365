@@ -15,7 +15,7 @@ div.shipping_type {
     border: none;
     box-shadow: none;
     width: 51px;
-    display: flex;
+    d
 }
 
 div.shipping_date {

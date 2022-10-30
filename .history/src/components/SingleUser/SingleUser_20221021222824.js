@@ -7,16 +7,12 @@ import TopNavbar from "../TopNavbar/TopNavbar";
 import Shipment from "../Shipment/Shipment";
 import "./SingleUser.css";
 
-function SingleUser ({ handleChange }) {
+function SingleUser() {
   const { id } = useParams();
 
   const [users, setusers] = useState([]);
 
-  const [searchText, setsearchText] = useState('');
-
-  const handleChange = e => {
-    setsearchText(e.target.value);
-      };
+  
 
   useEffect(() => {
     const getUserRequest = `https://demo3522726.mockable.io/get_single_customer/123456789?/${id}`;
@@ -90,15 +86,12 @@ function SingleUser ({ handleChange }) {
               <input
                 type="text"
                 placeholder="Search by Shipment,ID,Destination"
-                onChange = {handleChange}
+                 
               />
             </div>
           </div>
           <div className="singleuser_bottom">
-           <Shipment shipments={shipments.filter((shipment) =>
-            shipment.shipping_type.includes(searchText)
-            )}
-             /> 
+           <Shipment /> 
         </div>
         </div>
       </section>

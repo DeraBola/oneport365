@@ -3,14 +3,18 @@ import { Link, useParams } from "react-router-dom";
 import Rectangle from "../../assets/img/Line 18.png";
 import Ecllipse from "../../assets/img/Ellipse 19.png";
 import Arrowup from "../../assets/img/Icon (1).png";
-import Arrowdown from "../../assets/img/Icon.png";
+import Arrowdown from "../../assets/img/Icon (1).png";
 import Axios from "axios";
 import "./Shipment.css";
 
-const Shipment = (props) => {
+const Shipment = () => {
   const [shipments, setShipments] = useState([]);
 
+  const shipping_type
+
   const { shipmentid } = useParams();
+
+  const [searchText, setsearchText] = useState('');
 
   useEffect(() => {
     Axios.get(
@@ -39,10 +43,12 @@ const Shipment = (props) => {
           </tr>
         </thead>
         <tbody>
-          { props.shipments.map((shipment) => (
+          {shipments.filter((shipment) =>
+          shipment.shipping_type.toLowerCase().includes(searchText)
+          ).map((shipment) => (
             <tr key={shipment._id}>
               <td>
-                { shipment.shipping_type  === "import" ? (
+                { shipping_type  === "import" ? (
                   <div className="shipping_type"><img src={Arrowup} alt="arrowup" />{shipment.shipping_type}</div>
                 ) : (
                   <div className="shipping_type"><img src={Arrowdown} alt="arrowup" />{shipment.shipping_type}</div>

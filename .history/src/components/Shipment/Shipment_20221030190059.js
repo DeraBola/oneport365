@@ -39,7 +39,7 @@ const Shipment = (props) => {
           </tr>
         </thead>
         <tbody>
-          { props.shipments.map((shipment) => (
+          {props.map((shipment) => (
             <tr key={shipment._id}>
               <td>
                 { shipment.shipping_type  === "import" ? (

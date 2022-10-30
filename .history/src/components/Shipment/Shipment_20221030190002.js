@@ -39,7 +39,9 @@ const Shipment = (props) => {
           </tr>
         </thead>
         <tbody>
-          { props.shipments.map((shipment) => (
+          {shipments.filter((shipment) =>
+          shipment.shipping_type.toLowerCase().includes(searchText)
+          ).map((shipment) => (
             <tr key={shipment._id}>
               <td>
                 { shipment.shipping_type  === "import" ? (

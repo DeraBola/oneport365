@@ -96,9 +96,8 @@ function SingleUser ({ handleChange }) {
           </div>
           <div className="singleuser_bottom">
            <Shipment shipments={shipments.filter((shipment) =>
-            shipment.shipping_type.includes(searchText)
-            )}
-             /> 
+            shipment.shipping_type.includes(searchText(
+            )} /> 
         </div>
         </div>
       </section>
