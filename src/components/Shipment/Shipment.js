@@ -4,24 +4,13 @@ import Rectangle from "../../assets/img/Line 18.png";
 import Ecllipse from "../../assets/img/Ellipse 19.png";
 import Arrowup from "../../assets/img/Icon (1).png";
 import Arrowdown from "../../assets/img/Icon.png";
-import Axios from "axios";
 import "./Shipment.css";
 
 const Shipment = (props) => {
-  const [shipments, setShipments] = useState([]);
-
-  const { shipmentid } = useParams();
-
-  useEffect(() => {
-    Axios.get(
-      `https://demo3522726.mockable.io/get_single_customer_shipments/123456789?/${shipmentid}`
-    )
-      .then((res) => {
-        console.log(res.data);
-        setShipments(res.data);
-      })
-      .catch((err) => console.log(err));
-  }, [shipmentid]);
+  const fullDateMethod =(timestamp) =>{
+  const dateString = new Date(timestamp).toDateString()
+  return `${dateString.replace(' ', ', ')}`
+}
 
    
   return (
@@ -39,13 +28,19 @@ const Shipment = (props) => {
           </tr>
         </thead>
         <tbody>
-          { props.shipments.map((shipment) => (
+          {props.shipments.map((shipment) => (
             <tr key={shipment._id}>
               <td>
-                { shipment.shipping_type  === "import" ? (
-                  <div className="shipping_type"><img src={Arrowup} alt="arrowup" />{shipment.shipping_type}</div>
+                {shipment.shipping_type === "import" ? (
+                  <div className="shipping_type">
+                    <img src={Arrowup} alt="arrowup" />
+                    {shipment.shipping_type}
+                  </div>
                 ) : (
-                  <div className="shipping_type"><img src={Arrowdown} alt="arrowup" />{shipment.shipping_type}</div>
+                  <div className="shipping_type">
+                    <img src={Arrowdown} alt="arrowup" />
+                    {shipment.shipping_type}
+                  </div>
                 )}
               </td>
               <td>
@@ -80,11 +75,11 @@ const Shipment = (props) => {
               </td>
               <td>
                 <div className="shipping_date">
-                  {shipment.shipment_pickup_date}
+                  {fullDateMethod(shipment.shipment_pickup_date)}
                 </div>
               </td>
               <td>
-                <div className="shipment_id">{shipment._id}</div>
+                <div className="shipment_id">ID-{shipment._id.slice(18)}</div>
               </td>
               <td>
                 <div className="ship_edit">

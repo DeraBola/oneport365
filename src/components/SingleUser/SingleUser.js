@@ -5,9 +5,10 @@ import { BsPlus } from "react-icons/bs";
 import { MdSearch } from "react-icons/md";
 import TopNavbar from "../TopNavbar/TopNavbar";
 import Shipment from "../Shipment/Shipment";
+import Axios from "axios";
 import "./SingleUser.css";
 
-function SingleUser ({ handleChange }) {
+function SingleUser () {
   const { id } = useParams();
 
   const [users, setusers] = useState([]);
@@ -16,16 +17,44 @@ function SingleUser ({ handleChange }) {
 
   const handleChange = e => {
     setsearchText(e.target.value);
+    searchShipment();
       };
 
   useEffect(() => {
     const getUserRequest = `https://demo3522726.mockable.io/get_single_customer/123456789?/${id}`;
-    fetch(getUserRequest)
-      .then((response) => response.json())
+    Axios.get(getUserRequest)
       .then((json) => {
-        console.log(json);
-        setusers(json);
+        console.log('json', json);
+        setusers(json.data);
       });
+  }, [id]);
+
+  const [shipments, setShipments] = useState([]);
+  const [shipmentsCopy, setShipmentsCopy] = useState([]);
+  
+  const searchShipment = ()=>{
+    const filteredShipmentList = []
+    shipments.map((shipment) => {
+      const shipmentCopy = JSON.stringify(shipment).toLowerCase();
+      if (shipmentCopy.includes(searchText.toLowerCase())) {
+        filteredShipmentList.push(shipment);
+      }
+    });
+    setShipmentsCopy(filteredShipmentList);
+    }
+  
+
+  useEffect(() => {
+    console.log(id)
+    Axios.get(
+      `https://demo3522726.mockable.io/get_single_customer_shipments/123456789?/${id}`
+    )
+      .then((res) => {
+        console.log("shipments", res.data);
+        setShipments(res.data);
+        setShipmentsCopy(res.data);
+      })
+      .catch((err) => console.log(err));
   }, [id]);
 
   return (
@@ -83,23 +112,22 @@ function SingleUser ({ handleChange }) {
                 </select>
               </div>
             </div>
-            <div className="single_user_search" >
+            <div className="single_user_search">
               <div className="search_icons">
                 <MdSearch />
               </div>
               <input
                 type="text"
                 placeholder="Search by Shipment,ID,Destination"
-                onChange = {handleChange}
+                onChange={handleChange}
               />
             </div>
           </div>
           <div className="singleuser_bottom">
-           <Shipment shipments={shipments.filter((shipment) =>
-            shipment.shipping_type.includes(searchText)
-            )}
-             /> 
-        </div>
+            <Shipment
+              shipments={shipmentsCopy}
+            />
+          </div>
         </div>
       </section>
     </>
