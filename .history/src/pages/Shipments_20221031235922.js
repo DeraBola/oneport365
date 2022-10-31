@@ -16,12 +16,6 @@ function Shipments() {
     });
   }, []);
 
-  const fullDateMethod = (timestamp) => {
-    const dateString = new Date(timestamp).toDateString()
-    return `${dateString.replace(' ', ', ')}`
-  }
-  
-
   return (
     <>
       <TopNavbar title="Shipments" />
@@ -50,9 +44,7 @@ function Shipments() {
                     {singleShipment.shipping_type}
                   </div>
                 </div>
-                <div className="middle_one_date"> 
-                {fullDateMethod( singleShipment.shipment_pickup_date)}
-                </div>
+                <div className="middle_one">
               </div>
           </div> 
           ))}

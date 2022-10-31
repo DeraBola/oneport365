@@ -22,6 +22,7 @@ function Shipments() {
   }
   
 
+
   return (
     <>
       <TopNavbar title="Shipments" />
@@ -50,9 +51,7 @@ function Shipments() {
                     {singleShipment.shipping_type}
                   </div>
                 </div>
-                <div className="middle_one_date"> 
-                {fullDateMethod( singleShipment.shipment_pickup_date)}
-                </div>
+                <div className="middle_one_date"> {fullDateMethod(shipment.shipment_pickup_date)}</div>
               </div>
           </div> 
           ))}

@@ -16,12 +16,6 @@ function Shipments() {
     });
   }, []);
 
-  const fullDateMethod = (timestamp) => {
-    const dateString = new Date(timestamp).toDateString()
-    return `${dateString.replace(' ', ', ')}`
-  }
-  
-
   return (
     <>
       <TopNavbar title="Shipments" />
@@ -39,8 +33,8 @@ function Shipments() {
               <div className="shipment_track_update"></div>
             </div>
           </div>
-          {singleShipments.map((singleShipment) => (
           <div className="shipments_middle">
+            {singleShipments.map((singleShipment) => (
               <div className="middle_one">
                 <div className="middle_one_export">
                   <div className="middle_one_img ">
@@ -50,12 +44,9 @@ function Shipments() {
                     {singleShipment.shipping_type}
                   </div>
                 </div>
-                <div className="middle_one_date"> 
-                {fullDateMethod( singleShipment.shipment_pickup_date)}
-                </div>
               </div>
-          </div> 
-          ))}
+            ))}
+          </div>
           <div className="shipments_bottom"></div>
         </div>
       </section>
