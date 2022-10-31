@@ -76,7 +76,7 @@ tbody tr {
     font-weight: 700;
     padding: 12px 10px;
     background: none;
-    width: 100p0ppx;
+    width: 50%;
 }
 
 .ship_edit {
@@ -117,9 +117,7 @@ tbody tr {
     border-radius: 50%;
 }
 
-.customer_phone {
-    white-space: nowrap;
-}
+.customer_phone {wh}
 
 @media (max-width: 768px) {
     .add_button_container {

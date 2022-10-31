@@ -38,7 +38,7 @@ function SingleUser () {
       const shipmentCopy = 
       JSON.stringify(shipmentfilter.shipping_type).toLowerCase() ||
       JSON.stringify(shipmentfilter.destination_port_code).toLowerCase()||
-      JSON.stringify(shipmentfilter.fullDateMethod ).toLowerCase() ;
+      JSON.stringify(shipmentfilter.destination_port_code).toLowerCase() ;
       if (shipmentCopy.includes(searchText.toLowerCase())) {
         filteredShipmentList.push(shipmentfilter);
       }

@@ -9,7 +9,7 @@ import Axios from "axios";
 import "./SingleUser.css";
 
 function SingleUser () {
-  const { id, shipmentid } = useParams();
+  const { id } = useParams();
 
   const [users, setusers] = useState([]);
 
@@ -29,18 +29,15 @@ function SingleUser () {
       });
   }, [id]);
 
-  const [shipmentsFilter, setShipmentsFilter] = useState([]);
+  const [shipments, setShipments] = useState([]);
   const [shipmentsCopy, setShipmentsCopy] = useState([]);
   
   const searchShipment = ()=>{
     const filteredShipmentList = []
-    shipmentsFilter.map((shipmentfilter) => {
-      const shipmentCopy = 
-      JSON.stringify(shipmentfilter.shipping_type).toLowerCase() ||
-      JSON.stringify(shipmentfilter.destination_port_code).toLowerCase()||
-      JSON.stringify(shipmentfilter.fullDateMethod ).toLowerCase() ;
+    shipments.map((shipment) => {
+      const shipmentCopy = JSON.stringify(shipment).toLowerCase();
       if (shipmentCopy.includes(searchText.toLowerCase())) {
-        filteredShipmentList.push(shipmentfilter);
+        filteredShipmentList.push(shipment);
       }
     });
     setShipmentsCopy(filteredShipmentList);
@@ -50,15 +47,15 @@ function SingleUser () {
   useEffect(() => {
     console.log(id)
     Axios.get(
-      `https://demo3522726.mockable.io/get_single_customer_shipments/123456789?/${shipmentid}`
+      `https://demo3522726.mockable.io/get_single_customer_shipments/123456789?/${}`
     )
       .then((res) => {
         console.log("shipments", res.data);
-        setShipmentsFilter(res.data);
+        setShipments(res.data);
         setShipmentsCopy(res.data);
       })
       .catch((err) => console.log(err));
-  }, [shipmentid]);
+  }, [id]);
 
   return (
     <>

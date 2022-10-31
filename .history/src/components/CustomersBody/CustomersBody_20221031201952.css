@@ -76,7 +76,7 @@ tbody tr {
     font-weight: 700;
     padding: 12px 10px;
     background: none;
-    width: 100p0ppx;
+    width: 50%;
 }
 
 .ship_edit {
@@ -107,6 +107,7 @@ tbody tr {
 .avatar_image {
     display: flex;
     text-align: center;
+    justify-content: space-between;
     flex-direction: start;
     align-items: center;
 }
@@ -115,10 +116,6 @@ tbody tr {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-}
-
-.customer_phone {
-    white-space: nowrap;
 }
 
 @media (max-width: 768px) {

@@ -45,7 +45,7 @@ const CustomersBody = () => {
                 <td> <div className="avatar_image" ><img src={customer.Avatar} alt="avatar_img" /> {customer.first_name}</div> </td>
                 <td>{customer.last_name}</td>
                 <td>{customer.email}</td>
-                <td><div className="customer_phone">{customer.phone}</div> </td>
+                <td>.customer.phone {customer.phone} </td>
                 <td>-</td>
                 <td >
                   <div className="ship_edit" >

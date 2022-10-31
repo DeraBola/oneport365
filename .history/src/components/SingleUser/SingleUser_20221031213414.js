@@ -35,10 +35,7 @@ function SingleUser () {
   const searchShipment = ()=>{
     const filteredShipmentList = []
     shipmentsFilter.map((shipmentfilter) => {
-      const shipmentCopy = 
-      JSON.stringify(shipmentfilter.shipping_type).toLowerCase() ||
-      JSON.stringify(shipmentfilter.destination_port_code).toLowerCase()||
-      JSON.stringify(shipmentfilter.fullDateMethod ).toLowerCase() ;
+      const shipmentCopy = JSON.stringify(shipmentfilter)..toLowerCase();
       if (shipmentCopy.includes(searchText.toLowerCase())) {
         filteredShipmentList.push(shipmentfilter);
       }

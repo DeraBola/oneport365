@@ -1,0 +1,75 @@
+.destination {
+    display: flex;
+    flex-flow: column;
+    padding: 1rem 1rem;
+    align-items: flex-start;
+}
+
+.shipping_type {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.shipping_type_img {
+    width: 50px;
+    height: 0px;
+    background: #F0FDF4;
+    border-radius: 35px;
+    padding: 10px;
+}
+
+.shipping_type_img img {
+    width: 100%;
+}
+
+.shipping_type_text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    align-items: center;
+    color: #000000;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    width: 51px;
+}
+
+.shipping_date {
+    font-weight: 600;
+    align-items: center;
+    color: #000000;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.destination_code {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    align-items: center;
+    color: #000000;
+    background: transparent;
+}
+
+.destination_country {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    color: #6B7280;
+    display: flex;
+    flex-direction: column;
+}
+
+.rect_image {
+    display: flex;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+}
+
+.rect_image img {
+    width: 100%;
+}
