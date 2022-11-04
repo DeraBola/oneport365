@@ -10,12 +10,12 @@ export const  UploadDocumentData = [
          cName:'document-text '
     }, 
      {
-        title:' Additional Services',
+        title:' AdditiServices',
         path:'/services',
         cName:'document-text  '
     }, 
     {
-        title:'Rates',
+        title:'RatesDocument',
         path:'/ratesdocument ',
         cName:'document-text '
     }

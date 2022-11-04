@@ -6,14 +6,7 @@ import { BiArrowBack } from "react-icons/bi";
 import Arrowup from "../assets/img/Icon (1).png";
 import Rectangle from "../assets/img/Line 18.png";
 import Ecllipse from "../assets/img/Ellipse 19.png";
-import UploadDocument  from "../components/UploadDocument/UploadDocument";
-import {  Routes, Route } from "react-router-dom";
-import Documentupload from "../pages/Documentupload";
-import Services from "../pages/Services";
-import Cargo from "../pages/Cargo";
-import RatesDocument from "../pages/RatesDocument";
-
-
+import { UploadDocumentData } from "../components/UploadDocumentData";
 
 function Shipments() {
   const [singleShipment, setSingleShipment] = useState([]);
@@ -109,15 +102,7 @@ function Shipments() {
             </div>
           )}
           <div className="shipments_bottom">
-        
-          <UploadDocument />
-          <Routes>
-          <Route path="/documentupload" element={<Documentupload  />} />  
-           <Route path="/cargo" element={<Cargo />} />  
-           <Route path="/services" element={<Services />} /> 
-           <Route path="/ratesdocument" element={<RatesDocument />} />
-            </Routes>
-        
+          <DcumentUplad />
           </div>
         </div>
       </section>

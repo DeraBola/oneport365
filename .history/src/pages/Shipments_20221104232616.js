@@ -7,7 +7,7 @@ import Arrowup from "../assets/img/Icon (1).png";
 import Rectangle from "../assets/img/Line 18.png";
 import Ecllipse from "../assets/img/Ellipse 19.png";
 import UploadDocument  from "../components/UploadDocument/UploadDocument";
-import {  Routes, Route } from "react-router-dom";
+import { BrowserRo Routes, Route } from "react-router-dom";
 import Documentupload from "../pages/Documentupload";
 import Services from "../pages/Services";
 import Cargo from "../pages/Cargo";

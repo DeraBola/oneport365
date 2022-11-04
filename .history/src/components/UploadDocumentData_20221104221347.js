@@ -15,7 +15,7 @@ export const  UploadDocumentData = [
         cName:'document-text  '
     }, 
     {
-        title:'Rates',
+        title:'RatesDocument',
         path:'/ratesdocument ',
         cName:'document-text '
     }

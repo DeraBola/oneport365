@@ -7,11 +7,11 @@ import Arrowup from "../assets/img/Icon (1).png";
 import Rectangle from "../assets/img/Line 18.png";
 import Ecllipse from "../assets/img/Ellipse 19.png";
 import UploadDocument  from "../components/UploadDocument/UploadDocument";
-import {  Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Documentupload from "../pages/Documentupload";
 import Services from "../pages/Services";
 import Cargo from "../pages/Cargo";
-import RatesDocument from "../pages/RatesDocument";
+import RatesDocument from "./pages/RatesDocument";
 
 
 
@@ -109,7 +109,7 @@ function Shipments() {
             </div>
           )}
           <div className="shipments_bottom">
-        
+          <Router> 
           <UploadDocument />
           <Routes>
           <Route path="/documentupload" element={<Documentupload  />} />  
@@ -117,7 +117,7 @@ function Shipments() {
            <Route path="/services" element={<Services />} /> 
            <Route path="/ratesdocument" element={<RatesDocument />} />
             </Routes>
-        
+          </Router>
           </div>
         </div>
       </section>

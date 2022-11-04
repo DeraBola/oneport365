@@ -28,7 +28,10 @@ function App() {
           <Route path="/quotes" element={<Quotes />} />
           <Route path="/invoices" element={<Invoices />} />  
            <Route path="/singleuser/:id" element={<SingleUser />} />
-              
+           <Route path="/documentupload" element={<Documentupload  />} />  
+           <Route path="/cargo" element={<Cargo />} />  
+           <Route path="/services" element={<Services />} /> 
+           <Route path="/ratesdocument" element={<RatesDocument />} />   
         </Routes>
       </Router>
     </>
