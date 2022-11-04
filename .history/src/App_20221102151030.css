@@ -1,0 +1,216 @@
+.App {
+    text-align: center;
+}
+
+.dashboard,
+.admin,
+.customers,
+.shipments,
+.tracking,
+.documents,
+.rates,
+.quotes {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.p__Inter {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+section {
+    min-height: calc(100vh - 90px);
+    padding: 2rem;
+    margin-top: 8rem;
+}
+
+.customers_container {
+    width: calc(100% - 20rem);
+    margin-left: 20rem;
+}
+
+.shipments_container {
+    display: flex;
+    flex-flow: column;
+    padding: 2rem 1rem;
+    align-items: flex-start;
+    width: 53rem;
+}
+
+.shipments_top {
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+    padding: 20px;
+}
+
+.shipment_detials {
+    display: flex;
+    align-items: center;
+}
+
+.shipment_detials_img {
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 39px;
+    height: 39px;
+    background: #F9FAFB;
+    border-radius: 24px;
+    color: #000;
+    display: flex;
+}
+
+.shipment_detials_text {
+    width: 191px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+.shipment_detials_text p {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #000;
+}
+
+.shipment_track {
+    display: flex;
+    width: 250px;
+    padding: 7px;
+}
+
+.shipment_track_invoice {
+    border: 1px solid #d1d5db;
+    background: #fff;
+    color: #000;
+    padding: 12px;
+    width: 80px;
+    border-radius: 6px;
+    text-align: center;
+    justify-content: center;
+}
+
+.shipment_track_invoice p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    color: #374151;
+}
+
+.shipment_track_update {
+    border: 1px solid #d1d5db;
+    background: #fff;
+    color: #000;
+    padding: 12px;
+    width: 220px;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.shipment_track_update p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    color: #374151;
+    white-space: nowrap;
+}
+
+.shipments_middle {
+    display: flex;
+    flex-direction: column;
+    width: 950px;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.shipments_middle_one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 100px;
+    background: #3ab44a;
+    flex-direction: row;
+    width: 950px;
+    border-radius: 6px 6px 0 0;
+}
+
+.shipments_middle_one_export_img {
+    display: flex;
+    align-items: center;
+}
+
+.shipments_middle_one_img {
+    width: 30px;
+    height: 30px;
+    background: #F0FDF4;
+    border-radius: 35px;
+    padding: 10px;
+    display: flex;
+}
+
+.shipments_middle_one_img img {
+    width: 100%;
+}
+
+.shipments_middle_one_text {
+    margin-left: 10px;
+    width: 63px;
+}
+
+.shipments_middle_one_text p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    align-items: center;
+    color: #fff;
+    letter-spacing: -0.02em;
+}
+
+.shipments_middle_one_date {
+    width: 150px;
+}
+
+.shipments_middle_one_date p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    align-items: center;
+    color: #fff;
+    letter-spacing: -0.02em;
+}
+
+.shipments_middle_one_shipmentID {
+    display: flex;
+    fl
+}
+
+@media (max-width: 768px) {
+    .customers_container {
+        width: 100%;
+        margin-left: 5rem;
+    }
+    .p__Inter {
+        font-size: 28px;
+        line-height: 40px;
+        align-items: center;
+        letter-spacing: -0.02em;
+        color: #000000;
+    }
+}
