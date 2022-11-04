@@ -292,13 +292,15 @@ section {
     width: 950px;
     color: #fff;
     padding: 20px;
-    border-bottom: .1rem solid #E5E7EB;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 20px;
+    height: 60px;
+    border-bottom: ;
 }
 
 .document-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 12px;
     list-style: none;
 }
 
@@ -309,10 +311,6 @@ section {
     display: flex;
     align-items: center;
     padding: 0 16px;
-}
-
-.shipments_bottom_nav span:hover {
-    color: #000000;
 }
 
 @media (max-width: 768px) {

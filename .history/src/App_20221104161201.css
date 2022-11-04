@@ -292,27 +292,26 @@ section {
     width: 950px;
     color: #fff;
     padding: 20px;
-    border-bottom: .1rem solid #E5E7EB;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 20px;
 }
 
 .document-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
     list-style: none;
+    height: 60px;
 }
 
-.document-text a {
+a {
     text-decoration: none;
     color: #6b7280;
     font-size: 24px;
+    width: 95%;
+    height: 100%;
     display: flex;
     align-items: center;
     padding: 0 16px;
-}
-
-.shipments_bottom_nav span:hover {
-    color: #000000;
 }
 
 @media (max-width: 768px) {

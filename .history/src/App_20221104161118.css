@@ -292,27 +292,23 @@ section {
     width: 950px;
     color: #fff;
     padding: 20px;
-    border-bottom: .1rem solid #E5E7EB;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 20px;
 }
 
 .document-text {
-    list-style: none;
-}
-
-.document-text a {
-    text-decoration: none;
-    color: #6b7280;
-    font-size: 24px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    padding: 0 16px;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
 }
 
-.shipments_bottom_nav span:hover {
-    color: #000000;
+.nav-text a .icons {
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 8px;
 }
 
 @media (max-width: 768px) {

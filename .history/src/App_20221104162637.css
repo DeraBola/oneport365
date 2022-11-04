@@ -311,9 +311,7 @@ section {
     padding: 0 16px;
 }
 
-.shipments_bottom_nav span:hover {
-    color: #000000;
-}
+{}
 
 @media (max-width: 768px) {
     .customers_container {

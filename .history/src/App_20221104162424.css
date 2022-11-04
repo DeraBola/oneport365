@@ -295,7 +295,7 @@ section {
     border-bottom: .1rem solid #E5E7EB;
     display: flex;
     justify-content: flex-start;
-    margin-top: 20px;
+    margin-top: ;
 }
 
 .document-text {
@@ -309,10 +309,6 @@ section {
     display: flex;
     align-items: center;
     padding: 0 16px;
-}
-
-.shipments_bottom_nav span:hover {
-    color: #000000;
 }
 
 @media (max-width: 768px) {
