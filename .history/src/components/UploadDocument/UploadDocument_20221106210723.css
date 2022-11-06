@@ -1,0 +1,22 @@
+.loaded_document {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+    width: 900px;
+    background: #fff;
+}
+
+.loaded_document_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.loaded_document_text {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.loaded_document_text p {}

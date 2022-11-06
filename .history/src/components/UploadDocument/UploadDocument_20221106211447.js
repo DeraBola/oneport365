@@ -10,8 +10,8 @@ function UploadDocument() {
           <p>Uploaded Document</p>
         </div>
         <div className="loaded_request">
-          <div className="request_doc"> <p>Request Document</p></div>
-          <div className="uploaded_doc"> <p>Upload Document</p></div>
+          <div className="request_doc">pRequest Document</div>
+          <div className="uploaded_doc">Upload Document</div>
         </div>
       </div>
     </div>

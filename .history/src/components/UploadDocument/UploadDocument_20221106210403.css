@@ -1,0 +1,19 @@
+.loaded_document {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+    width: 950px;
+    background: #fff;
+}
+
+.loaded_document_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.loaded_document_text {
+    display: flex;
+    algn
+}

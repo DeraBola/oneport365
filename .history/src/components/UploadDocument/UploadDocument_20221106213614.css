@@ -78,7 +78,7 @@
         border-radius: 6px;
     }
     
-    .request_doc p:hover,
-    .uploaded_doc p:hover {
-        color: #fff;
-    }
+    .request_doc p,
+    .uploaded_doc p:h {}
+    
+    r {}
