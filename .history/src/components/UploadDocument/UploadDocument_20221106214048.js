@@ -1,5 +1,5 @@
 import React from "react";
-import UploadedImg from "../../assets/img/Invoices.png"
+import 
 import "./UploadDocument.css";
 
 function UploadDocument() {
@@ -11,7 +11,7 @@ function UploadDocument() {
         </div>
         <div className="loaded_request">
           <div className="request_doc"> <p>Request Document</p></div>
-          <div className="uploaded_doc"> <p>Upload Document</p> <img src={UploadedImg} alt="" /> </div>
+          <div className="uploaded_doc"> <p>Upload Document</p> <img src={} alt="" /> </div>
         </div>
       </div>
     </div>
