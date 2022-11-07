@@ -22,8 +22,8 @@ function UploadDocument() {
            <p>Upload Document</p> <img src={UploadedImg} alt="" />
          </div>
         </div>
+        {modalOpen && <DropZone setOpenModal={setModalOpen} />}
       </div>
-      {modalOpen && <DropZone setOpenModal={setModalOpen} />}
     </div>
   );
 }

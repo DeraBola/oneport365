@@ -1,6 +1,5 @@
-import React,{useState} from "react";
+import React from "react";
 import UploadedImg from "../../assets/img/Invoices.png"
-import DropZone from "../../components/DropZone/DropZone";
 import "./UploadDocument.css";
 
 function UploadDocument() {
@@ -20,10 +19,9 @@ function UploadDocument() {
           setModalOpen(true);
         }} >
            <p>Upload Document</p> <img src={UploadedImg} alt="" />
-         </div>
+         </div
         </div>
       </div>
-      {modalOpen && <DropZone setOpenModal={setModalOpen} />}
     </div>
   );
 }

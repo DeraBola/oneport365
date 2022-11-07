@@ -25,6 +25,7 @@ function UploadDocument() {
       </div>
       {modalOpen && <DropZone setOpenModal={setModalOpen} />}
     </div>
+    
   );
 }
 
