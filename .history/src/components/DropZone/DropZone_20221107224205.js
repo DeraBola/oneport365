@@ -38,17 +38,6 @@ function DropZone( {setOpenModal}, props ) {
 
         <div className="footer">
            
-        <section className="container">
-      <div {...getRootProps({className: 'dropzone'})}>
-        <input {...getInputProps()} />
-        <p>Drag 'n' drop some files here, or click to select files</p>
-      </div>
-      <aside>
-        <h4>Files</h4>
-        <ul>{files}</ul>
-      </aside>
-    </section>
-
           
           <button>Continue</button>
         </div>
