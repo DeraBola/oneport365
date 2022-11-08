@@ -7,7 +7,6 @@ function UploadDocument() {
 
   const [modalOpen, setModalOpen] = useState(false);
   const [file, setFile] = useState(null);
-  const [uploadedfile, setuploadedFile] = useState([]);
 
   return (
     <div className="loaded_document">
@@ -25,20 +24,8 @@ function UploadDocument() {
         </div>
       </div>
       <div className="modal_container">
-        {modalOpen && <DropZone setOpenModal={setModalOpen} 
-        setFile={setFile}
-         File={File} 
-         setuploadedFile={setuploadedFile}
-         uploadedFile={uploadedfile} 
-           />}
-
-{uploadedfile.map((uploadedfiles) => (
-  <>
-  <p className="p__Inter ">{uploadedfiles ? uploadedfiles[0].name : ''}</p>
-  <img Src={'URL.createObjectURL(file[0])'} alt="" />
-  </>
-))}
-     
+        {modalOpen && <DropZone setOpenModal={setModalOpen} setFile={setFile} />}
+      {    file?[0].name}
       </div>  
     </div>
   );

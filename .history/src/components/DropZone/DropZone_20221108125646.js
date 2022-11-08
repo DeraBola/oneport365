@@ -7,7 +7,7 @@ function DropZone({ setOpenModal, setFile, file, setuploadedFile, uploadedFile  
     console.log(acceptedFiles);
     console.log(file);
     setFile(acceptedFiles) 
-    setuploadedFile([...uploadedFile, file])
+    setuploadedFile([...uploadedFile])
     setOpenModal(false)
   }, [file]);
 

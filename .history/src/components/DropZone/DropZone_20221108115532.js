@@ -2,14 +2,12 @@ import React, { useCallback } from "react";
 import "./DropZone.css";
 import { useDropzone } from "react-dropzone";
 
-function DropZone({ setOpenModal, setFile, file, setuploadedFile, uploadedFile  } ) {
-  const onDrop = useCallback((acceptedFiles, ) => {
+function DropZone({ setOpenModal, setFile } ) {
+  const onDrop = useCallback((acceptedFiles) => {
     console.log(acceptedFiles);
-    console.log(file);
     setFile(acceptedFiles) 
-    setuploadedFile([...uploadedFile, file])
     setOpenModal(false)
-  }, [file]);
+  }, [setFile, ]);
 
   const { getRootProps, getInputProps, isDragReject } =
     useDropzone({

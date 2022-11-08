@@ -33,10 +33,8 @@ function UploadDocument() {
            />}
 
 {uploadedfile.map((uploadedfiles) => (
-  <>
-  <p className="p__Inter ">{uploadedfiles ? uploadedfiles[0].name : ''}</p>
-  <img Src={'URL.createObjectURL(file[0])'} alt="" />
-  </>
+  <p  className="p__Inter ">{ uploadedfiles?  uploadedfiles[0].name:''}</p>
+  Src={}
 ))}
      
       </div>  
