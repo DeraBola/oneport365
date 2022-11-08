@@ -2,11 +2,11 @@ import React, { useCallback } from "react";
 import "./DropZone.css";
 import { useDropzone } from "react-dropzone";
 
-function DropZone({ setOpenModal, setFile } ) {
+function DropZone({ setOpenModal },  { setFile } ) {
   const onDrop = useCallback((acceptedFiles) => {
     console.log(acceptedFiles);
-    setFile(acceptedFiles)
-  }, [setFile]);
+    setFile({acceptedFiles})
+  }, []);
 
   const { getRootProps, getInputProps, isDragReject } =
     useDropzone({
@@ -55,10 +55,9 @@ function DropZone({ setOpenModal, setFile } ) {
                 </>
               )}
             </div>
+
+            <button>Continue</button>
           </div>
-          <button  onClick={() => {
-              setFile([]);
-            }} >Upload</button>
         </div>
       </div>
     </div>

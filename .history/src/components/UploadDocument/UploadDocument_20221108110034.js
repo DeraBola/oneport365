@@ -24,9 +24,10 @@ function UploadDocument() {
         </div>
       </div>
       <div className="modal_container">
-        {modalOpen && <DropZone setOpenModal={setModalOpen} setFile={setFile} />}
+        {modalOpen && <DropZone setOpenModal={setModalOpen}  setFile={setFile} />}
       {file?.name}
-      </div>  
+      </div>
+      
     </div>
   );
 }

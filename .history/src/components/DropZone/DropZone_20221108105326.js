@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 import "./DropZone.css";
 import { useDropzone } from "react-dropzone";
 
-function DropZone({ setOpenModal, setFile } ) {
+function DropZone({ setOpenModal },  { setFile } ) {
   const onDrop = useCallback((acceptedFiles) => {
     console.log(acceptedFiles);
     setFile(acceptedFiles)
@@ -56,9 +56,7 @@ function DropZone({ setOpenModal, setFile } ) {
               )}
             </div>
           </div>
-          <button  onClick={() => {
-              setFile([]);
-            }} >Upload</button>
+          <button>Continue</button>
         </div>
       </div>
     </div>

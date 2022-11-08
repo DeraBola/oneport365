@@ -57,7 +57,7 @@ function DropZone({ setOpenModal, setFile } ) {
             </div>
           </div>
           <button  onClick={() => {
-              setFile([]);
+              setFle(false);
             }} >Upload</button>
         </div>
       </div>
