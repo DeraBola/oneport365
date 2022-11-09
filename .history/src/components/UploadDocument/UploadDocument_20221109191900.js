@@ -5,7 +5,7 @@ import { IoDocumentText } from "react-icons/io5";
 import { BiTrash } from "react-icons/bi";
 import "./UploadDocument.css";
 
-function UploadDocument() {
+functoon UploadDocument() {
 
   const [modalOpen, setModalOpen] = useState(false);
   const [file, setFile] = useState(null);

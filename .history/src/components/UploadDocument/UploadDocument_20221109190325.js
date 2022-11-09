@@ -37,7 +37,7 @@ function UploadDocument() {
 {uploadedfile.map((uploadedfiles) => (
   <>
   <div className="dropzone_content">
-    <div className="dropzone_file">
+    <div className="dropzone">
       <div className="file_icon"><IoDocumentText /></div>
   <p className="p__Inter ">{uploadedfiles ? uploadedfiles[0].name : ''}</p>
   <img Src={'URL.createObjectURL(file[0])'} alt="" /> 

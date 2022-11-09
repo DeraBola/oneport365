@@ -2,7 +2,6 @@ import React,{useState} from "react";
 import UploadedImg from "../../assets/img/Invoices.png"
 import DropZone from "../../components/DropZone/DropZone";
 import { IoDocumentText } from "react-icons/io5";
-import { BiTrash } from "react-icons/bi";
 import "./UploadDocument.css";
 
 function UploadDocument() {
@@ -36,15 +35,10 @@ function UploadDocument() {
 
 {uploadedfile.map((uploadedfiles) => (
   <>
-  <div className="dropzone_content">
-    <div className="dropzone_file">
-      <div className="file_icon"><IoDocumentText /></div>
+  <div className="drpzne_fle">
   <p className="p__Inter ">{uploadedfiles ? uploadedfiles[0].name : ''}</p>
-  <img Src={'URL.createObjectURL(file[0])'} alt="" /> 
-  </div>
-    <div className="dropzone_delete">
-    <BiTrash />
-    </div>
+  <img Src={'URL.createObjectURL(file[0])'} alt="" />
+  <IoDocumentText />
   </div>
   </>
 ))}
