@@ -84,7 +84,6 @@
         border: 1px solid #D1D5DB;
         margin-bottom: 10px;
         margin-top: 20px;
-        border: 8px;
     }
     
     .dropzone_file {
@@ -104,7 +103,7 @@
         color: #3AB44A;
         display: flex;
         justify-content: center;
-        margin-right: 15px;
+        mag
     }
     
     .file_text {
@@ -114,20 +113,6 @@
         display: flex;
         align-items: center;
         color: #111827;
-        margin-right: 15px;
-    }
-    
-    .dropzone_img {
-        width: 40px;
-        height: 40px;
-        align-items: center;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .dropzone_img img {
-        width: 100%;
     }
     
     .dropzone_delete {
@@ -140,5 +125,4 @@
         color: #ef4444;
         display: flex;
         justify-content: center;
-        margin-top: 10px;
     }

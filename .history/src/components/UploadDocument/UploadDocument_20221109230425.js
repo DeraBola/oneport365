@@ -18,9 +18,9 @@ function UploadDocument() {
   }
 
   useEffect(() => {
-    localStorage.setItem('drop-zone-data', JSON.stringify(uploadedfile)
+    localStorage.setItem('drop-zone-data', JSON.stringify(uplfile)
     );
-  }, [uploadedfile]);
+  }, [uploadedfile ]);
 
   useEffect(() => {
     const savedFiles = JSON.parse(

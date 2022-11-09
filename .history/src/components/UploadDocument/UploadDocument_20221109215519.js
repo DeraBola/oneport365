@@ -8,7 +8,7 @@ import "./UploadDocument.css";
 function UploadDocument() {
 
   const [modalOpen, setModalOpen] = useState(false);
-  const [file, setFile] = useState();
+  const [file, setFile] = useState(null);
   const [uploadedfile, setuploadedFile] = useState([]);
 
   const removeFile = file => () => {
@@ -18,20 +18,16 @@ function UploadDocument() {
   }
 
   useEffect(() => {
-    localStorage.setItem('drop-zone-data', JSON.stringify(uploadedfile)
+    localStorage.setItem('drop-zone-data', JSON.stringify(uploadedfile )
     );
-  }, [uploadedfile]);
+  }, [uploadedfile ]);
 
   useEffect(() => {
     const savedFiles = JSON.parse(
-      localStorage.getItem('drop-zone-data') || []
-    );
-    if(savedFiles){
-      setuploadedFile(savedFiles)
-      console.log(savedFiles);
-    }
+      localStorage.getItem('')
+    )
   
-  }, []);
+  }, [third])
   
   
   return (
@@ -57,14 +53,14 @@ function UploadDocument() {
          uploadedFile={uploadedfile} 
            />}
 
-{uploadedfile.map((uploadedfiles, id) => (
+{uploadedfile.map((uploadedfiles) => (
   <>
-  <div className="dropzone_content" key={id}>
+  <div className="dropzone_content">
     <div className="dropzone_file">
       <div className="file_icon"><IoDocumentText /></div>
   <p className=" file_text ">{uploadedfiles ? uploadedfiles[0].name : ''}</p>
   <div className="dropzone_img">
-    <img src={URL.createObjectURL( uploadedfiles[0])} alt="" />
+    <img Src={URL.createObjectURL( uploadedfiles[0])} alt="" />
      </div>
   
   </div>

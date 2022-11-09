@@ -84,7 +84,6 @@
         border: 1px solid #D1D5DB;
         margin-bottom: 10px;
         margin-top: 20px;
-        border: 8px;
     }
     
     .dropzone_file {
@@ -95,16 +94,12 @@
     }
     
     .file_icon {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         border-radius: 35px;
         background: #f0fdf4;
         align-items: center;
         padding: 10px;
-        color: #3AB44A;
-        display: flex;
-        justify-content: center;
-        margin-right: 15px;
     }
     
     .file_text {
@@ -113,32 +108,16 @@
         line-height: 28px;
         display: flex;
         align-items: center;
+        font-feature-settings: 'salt' on;
+        /* Neutral/900 */
         color: #111827;
-        margin-right: 15px;
-    }
-    
-    .dropzone_img {
-        width: 40px;
-        height: 40px;
-        align-items: center;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .dropzone_img img {
-        width: 100%;
     }
     
     .dropzone_delete {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         border-radius: 35px;
-        background: #fef2f2;
+        background: #f0fdf4;
         align-items: center;
         padding: 10px;
-        color: #ef4444;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
     }

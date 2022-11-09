@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from "react";
+import React,{useState} from "react";
 import UploadedImg from "../../assets/img/Invoices.png"
 import DropZone from "../../components/DropZone/DropZone";
 import { IoDocumentText } from "react-icons/io5";
@@ -8,32 +8,13 @@ import "./UploadDocument.css";
 function UploadDocument() {
 
   const [modalOpen, setModalOpen] = useState(false);
-  const [file, setFile] = useState();
+  const [file, setFile] = useState(null);
   const [uploadedfile, setuploadedFile] = useState([]);
 
   const removeFile = file => () => {
-    const newFiles = [...uploadedfile]
-    newFiles.splice(newFiles.indexOf(file), 1)
-    setuploadedFile(newFiles) 
+    const
   }
 
-  useEffect(() => {
-    localStorage.setItem('drop-zone-data', JSON.stringify(uploadedfile)
-    );
-  }, [uploadedfile]);
-
-  useEffect(() => {
-    const savedFiles = JSON.parse(
-      localStorage.getItem('drop-zone-data') || []
-    );
-    if(savedFiles){
-      setuploadedFile(savedFiles)
-      console.log(savedFiles);
-    }
-  
-  }, []);
-  
-  
   return (
     <div className="loaded_document">
       <div className="loaded_document_top">
@@ -57,18 +38,15 @@ function UploadDocument() {
          uploadedFile={uploadedfile} 
            />}
 
-{uploadedfile.map((uploadedfiles, id) => (
+{uploadedfile.map((uploadedfiles) => (
   <>
-  <div className="dropzone_content" key={id}>
+  <div className="dropzone_content">
     <div className="dropzone_file">
       <div className="file_icon"><IoDocumentText /></div>
   <p className=" file_text ">{uploadedfiles ? uploadedfiles[0].name : ''}</p>
-  <div className="dropzone_img">
-    <img src={URL.createObjectURL( uploadedfiles[0])} alt="" />
-     </div>
-  
+  <img Src={'URL.createObjectURL(file[0])'} alt="" /> 
   </div>
-    <div className="dropzone_delete" onClick={removeFile(file)} >
+    <div className="dropzone_delete">
     <BiTrash />
     </div>
   </div>

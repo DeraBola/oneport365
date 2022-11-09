@@ -82,63 +82,7 @@
         background: #fff;
         justify-content: space-between;
         border: 1px solid #D1D5DB;
-        margin-bottom: 10px;
-        margin-top: 20px;
-        border: 8px;
+        margin-bottom: ;
     }
     
-    .dropzone_file {
-        display: flex;
-        align-items: flex-start;
-        padding: 10px;
-        width: 350px;
-    }
-    
-    .file_icon {
-        width: 40px;
-        height: 40px;
-        border-radius: 35px;
-        background: #f0fdf4;
-        align-items: center;
-        padding: 10px;
-        color: #3AB44A;
-        display: flex;
-        justify-content: center;
-        margin-right: 15px;
-    }
-    
-    .file_text {
-        font-weight: 800;
-        font-size: 16px;
-        line-height: 28px;
-        display: flex;
-        align-items: center;
-        color: #111827;
-        margin-right: 15px;
-    }
-    
-    .dropzone_img {
-        width: 40px;
-        height: 40px;
-        align-items: center;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .dropzone_img img {
-        width: 100%;
-    }
-    
-    .dropzone_delete {
-        width: 40px;
-        height: 40px;
-        border-radius: 35px;
-        background: #fef2f2;
-        align-items: center;
-        padding: 10px;
-        color: #ef4444;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-    }
+    .dropzone_file {}
