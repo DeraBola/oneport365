@@ -1,0 +1,33 @@
+.dropdown-menu {
+    width: 200px;
+    list-style: none;
+    text-align: start;
+    position: absolute;
+    top: 100px;
+}
+
+.dropdown-menu li {
+    background: #fff;
+    cursor: pointer;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #6b7280;
+    font-size: 24px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.dropdown-menu ul.clicked {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .dropdown-menu {
+        width: 100%;
+    }
+}
