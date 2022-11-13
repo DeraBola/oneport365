@@ -36,7 +36,7 @@ function Shipments() {
         <div className="shipments_container">
           <div className="shipments_top">
             <div className="shipment_detials">
-              <Link to="/singleuser/:id">
+              <Link to="singleuser">
                 <div className="shipment_detials_img">
                   <BiArrowBack />
                 </div>

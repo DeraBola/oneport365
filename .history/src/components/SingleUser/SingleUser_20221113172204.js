@@ -34,7 +34,7 @@ function SingleUser () {
   
   const searchShipment = ()=> {
     const filteredShipmentList = []
-    shipmentsFilter.map((shipmentfilter) => {
+    shipmentsFilter.map((shipmentfilter) => {}
       const shipmentCopy = 
       JSON.stringify(shipmentfilter.shipping_type).toLowerCase() ||
       JSON.stringify(shipmentfilter.destination_port_code).toLowerCase()||

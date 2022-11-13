@@ -232,6 +232,10 @@
                 margin-right: 100px;
             }
             .single_user_search input {
-                width: 150px;
+                border: none;
+                background-color: #fff;
+                text-align: center;
+                margin-left: 10px;
+                width: 215px;
             }
         }

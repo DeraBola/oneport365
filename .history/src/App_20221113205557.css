@@ -50,7 +50,7 @@ section {
 
 .shipments_top {
     display: flex;
-    width: 950px;
+    width: 980px;
     padding: 20px;
 }
 
@@ -87,9 +87,9 @@ section {
 
 .shipment_track {
     display: flex;
-    width: 320px;
-    padding: 20px;
-    margin-left: 20rem;
+    width: 30px;
+    padding: 7px;
+    margin-left: 25rem;
 }
 
 .shipment_track_invoice {
@@ -135,7 +135,7 @@ section {
 .shipments_middle {
     display: flex;
     flex-direction: column;
-    width: 950px;
+    width: 980px;
     align-items: flex-start;
     padding: 20px;
 }
@@ -148,7 +148,7 @@ section {
     height: 100px;
     background: #3ab44a;
     flex-direction: row;
-    width: 920px;
+    width: 950px;
     border-radius: 6px 6px 0 0;
 }
 
@@ -224,7 +224,7 @@ section {
 
 .shipment_middle_two {
     display: flex;
-    width: 920px;
+    width: 950px;
     align-items: center;
     padding: 20px;
     flex-direction: row;

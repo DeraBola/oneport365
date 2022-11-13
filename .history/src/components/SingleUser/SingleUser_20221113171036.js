@@ -32,7 +32,7 @@ function SingleUser () {
   const [shipmentsFilter, setShipmentsFilter] = useState([]);
   const [shipmentsCopy, setShipmentsCopy] = useState([]);
   
-  const searchShipment = ()=> {
+  const searchShipment = ()=>{
     const filteredShipmentList = []
     shipmentsFilter.map((shipmentfilter) => {
       const shipmentCopy = 
@@ -40,7 +40,7 @@ function SingleUser () {
       JSON.stringify(shipmentfilter.destination_port_code).toLowerCase()||
       JSON.stringify(shipmentfilter.fullDateMethod ).toLowerCase() ||
       JSON.stringify(shipmentfilter.destination_port_country ).toLowerCase() ||
-      JSON.stringify(shipmentfilter.destination_port_city ).toLowerCase();
+      JSON.stringify(shipmentfilter.destination_port_country ).toLowerCase();
       if (shipmentCopy.includes(searchText.toLowerCase())) {
         filteredShipmentList.push(shipmentfilter);
       }
@@ -59,7 +59,7 @@ function SingleUser () {
         setShipmentsCopy(res.data);
       })
       .catch((err) => console.log(err));
-  }, [id, shipmentid]);
+  }, [shipmentid]);
 
   return (
     <>

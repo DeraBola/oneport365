@@ -32,7 +32,7 @@ function SingleUser () {
   const [shipmentsFilter, setShipmentsFilter] = useState([]);
   const [shipmentsCopy, setShipmentsCopy] = useState([]);
   
-  const searchShipment = ()=> {
+  const searchShipment = ()=>{
     const filteredShipmentList = []
     shipmentsFilter.map((shipmentfilter) => {
       const shipmentCopy = 
@@ -59,7 +59,7 @@ function SingleUser () {
         setShipmentsCopy(res.data);
       })
       .catch((err) => console.log(err));
-  }, [id, shipmentid]);
+  }, [id,  shipmentid]);
 
   return (
     <>

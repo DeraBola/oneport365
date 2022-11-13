@@ -2,7 +2,6 @@
      display: flex;
      flex-flow: column;
      padding: 2rem 3rem;
-     width: 62rem;
  }
  
  .add_button_container {

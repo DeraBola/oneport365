@@ -34,7 +34,7 @@ function SingleUser () {
   
   const searchShipment = ()=> {
     const filteredShipmentList = []
-    shipmentsFilter.map((shipmentfilter) => {
+    shipmentsFilter.map((shipmentfilter) => (
       const shipmentCopy = 
       JSON.stringify(shipmentfilter.shipping_type).toLowerCase() ||
       JSON.stringify(shipmentfilter.destination_port_code).toLowerCase()||
@@ -43,7 +43,7 @@ function SingleUser () {
       JSON.stringify(shipmentfilter.destination_port_city ).toLowerCase();
       if (shipmentCopy.includes(searchText.toLowerCase())) {
         filteredShipmentList.push(shipmentfilter);
-      }
+    )
     });
     setShipmentsCopy(filteredShipmentList);
     }

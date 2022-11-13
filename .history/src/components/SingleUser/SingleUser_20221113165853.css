@@ -219,7 +219,7 @@
             background-color: #fff;
             text-align: center;
             margin-left: 10px;
-            width: 215px;
+            width: 215;
         }
         
         .single_user_search input:focus {
@@ -230,8 +230,5 @@
             .single_user_search {
                 width: 200px;
                 margin-right: 100px;
-            }
-            .single_user_search input {
-                width: 150px;
             }
         }

@@ -2,7 +2,6 @@
      display: flex;
      flex-flow: column;
      padding: 2rem 3rem;
-     width: 62rem;
  }
  
  .add_button_container {
@@ -42,7 +41,7 @@
  .tables_container {
      margin-top: 3.5rem;
      width: 60rem;
-     padding: 5px;
+     padding: 20px;
  }
  
  table {
