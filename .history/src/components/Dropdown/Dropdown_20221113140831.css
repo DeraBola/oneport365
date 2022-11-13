@@ -60,16 +60,9 @@
     .dropdown-menu {
         width: 170px;
         padding: 10px;
-        right: 100px;
+        right: nn;
     }
     .dropdown-menu li {
         width: 150px;
-    }
-    .icons {
-        width: 30px;
-        height: 30px;
-    }
-    .dropdown_link span {
-        font-size: 16px;
     }
 }

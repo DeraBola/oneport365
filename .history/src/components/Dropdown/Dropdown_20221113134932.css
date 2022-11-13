@@ -1,11 +1,9 @@
 .dropdown-menu {
     width: 200px;
     list-style: none;
-    text-align: center;
+    text-align: start;
     position: absolute;
     top: 100px;
-    padding: 10px;
-    right: 20px;
 }
 
 .dropdown-menu li {
@@ -16,20 +14,7 @@
 }
 
 .dropdown_link {
-    width: 180px;
-    display: flex;
-    justify-content: flex-start;
-    padding: 6px;
-}
-
-.dropdown_link span {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #374151;
+    width: 200px;
 }
 
 .dropdown-menu a {
@@ -49,27 +34,13 @@
     width: 40px;
     height: 40px;
     padding: 5px;
-    align-items: center;
-}
-
-.icons img {
-    width: 100%;
 }
 
 @media (max-width: 768px) {
     .dropdown-menu {
         width: 170px;
-        padding: 10px;
-        right: 100px;
     }
     .dropdown-menu li {
         width: 150px;
-    }
-    .icons {
-        width: 30px;
-        height: 30px;
-    }
-    .dropdown_link span {
-        font-size: 16px;
     }
 }

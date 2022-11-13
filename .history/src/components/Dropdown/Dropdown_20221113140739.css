@@ -59,17 +59,10 @@
 @media (max-width: 768px) {
     .dropdown-menu {
         width: 170px;
-        padding: 10px;
-        right: 100px;
+        left: 20px;
     }
     .dropdown-menu li {
         width: 150px;
     }
-    .icons {
-        width: 30px;
-        height: 30px;
-    }
-    .dropdown_link span {
-        font-size: 16px;
-    }
+    .dropdown-menu {}
 }
