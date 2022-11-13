@@ -6,7 +6,7 @@
     height: 100%;
     padding: 1rem;
     text-align: center;
-    z-index: 1000;
+    z-index: 999;
     border-right: .1rem solid #E5E7EB;
     position: fixed;
 }
@@ -15,22 +15,19 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    z-index: 1000;
+    z-index: 999;
 }
 
 .menu-bars {
     margin-top: 20px;
     font-size: 2rem;
     background: none;
-    height: 61px;
-    width: 169.9178924560547px;
-    padding: 10px;
-    text-align: center;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
 }
 
-.menu-bars img {
-    width: 100%;
-}
+.menu-bars {}
 
 .nav-menu {
     background-color: #fff;
@@ -111,5 +108,11 @@ span:hover {
 @media (max-width:768px) {
     .header {
         max-width: 5rem;
+    }
+    .menu-bars {
+        font-size: 2rem;
+        height: 2rem;
+        width: 2rem;
+        padding: 0;
     }
 }
