@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi";
 import { BsPlus } from "react-icons/bs";
-import { MdSearch } from "react-icons/md";
+import { MdSearch, MdOutlineEast } from "react-icons/md";
 import TopNavbar from "../TopNavbar/TopNavbar";
 import ShipmentUser from "../ShipmentUser/ShipmentUser";
 import Axios from "axios";
@@ -71,6 +71,11 @@ function SingleUser () {
               <div className="arrow">
                 <BiArrowBack />
               </div>
+            </Link>
+            <Link to="/customers">
+              <div className="arrow">
+                <BiArrowBack />
+              </div> 
             </Link>
 
             {users && (

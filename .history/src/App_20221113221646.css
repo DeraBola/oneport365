@@ -305,7 +305,7 @@ section {
 
 .document-text {
     list-style: none;
-    border-bottom: .2rem solid #E5E7EB;
+    border-bottom: .1rem solid #E5E7EB;
     padding: 20px;
     text-decoration: none;
     color: #6b7280;
@@ -317,7 +317,7 @@ section {
 
 .document-text:hover {
     color: #000;
-    border-bottom: .2rem solid #3ab44a;
+    border-bottom: .1rem solid #3ab44a;
     padding-bottom: 20px;
 }
 
@@ -325,10 +325,6 @@ section {
     font-weight: 600;
     line-height: 24px;
     font-size: 16px;
-}
-
-.shipments_bottom_nav span {
-    white-space: nowrap;
 }
 
 .shipments_bottom_nav span:hover {
@@ -368,15 +364,15 @@ section {
         width: 800px;
     }
     .upload_document {
-        width: 780px;
+        width: 800px;
     }
     .shipments_middle_one_export_img {
         margin-right: 40px;
     }
     .shipments_middle_one_date {
-        margin-right: 40px;
+        margin-right: 20px;
     }
     .shipments_middle_one_shipmentID {
-        margin-left: 100px;
+        margin-right: 20px;
     }
 }

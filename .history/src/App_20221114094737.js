@@ -28,7 +28,7 @@ function App() {
           <Route path="/quotes" element={<Quotes />} />
           <Route path="/invoices" element={<Invoices />} />  
            <Route exact path="/singleuser/:id" element={<SingleUser />} />
-           <Route path="/shipments" element={<Shipments />} />         
+           <Route path="/shipments/:sh" element={<Shipments />} />         
         </Routes>
       </Router>
     </>

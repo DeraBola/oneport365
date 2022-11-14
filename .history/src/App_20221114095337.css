@@ -305,7 +305,7 @@ section {
 
 .document-text {
     list-style: none;
-    border-bottom: .2rem solid #E5E7EB;
+    border-bottom: .3rem solid #E5E7EB;
     padding: 20px;
     text-decoration: none;
     color: #6b7280;
@@ -317,7 +317,7 @@ section {
 
 .document-text:hover {
     color: #000;
-    border-bottom: .2rem solid #3ab44a;
+    border-bottom: .1rem solid #3ab44a;
     padding-bottom: 20px;
 }
 
@@ -325,10 +325,6 @@ section {
     font-weight: 600;
     line-height: 24px;
     font-size: 16px;
-}
-
-.shipments_bottom_nav span {
-    white-space: nowrap;
 }
 
 .shipments_bottom_nav span:hover {

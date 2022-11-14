@@ -160,7 +160,7 @@
         }
         
         @media (max-width: 768px) {
-            .loaded_document_top {
-                width: 760px;
+            .loaded_document {
+                width: 950px;
             }
         }

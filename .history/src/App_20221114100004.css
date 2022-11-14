@@ -328,7 +328,7 @@ section {
 }
 
 .shipments_bottom_nav span {
-    white-space: nowrap;
+    wrap
 }
 
 .shipments_bottom_nav span:hover {
