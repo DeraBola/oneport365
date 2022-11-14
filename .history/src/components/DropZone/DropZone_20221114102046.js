@@ -23,7 +23,7 @@ function DropZone({ setOpenModal, setFile, file, setuploadedFile, uploadedFile  
     });
 
   return (
-    <div className="modalBackground active">
+    <div className="modalBackground actve">
       <div className="modalContainer">
         <div className="titleCloseBtn">
           <button
