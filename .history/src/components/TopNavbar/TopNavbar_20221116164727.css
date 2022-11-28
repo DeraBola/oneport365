@@ -1,0 +1,120 @@
+    .navtop_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 1rem;
+        top: 0;
+        height: 130px;
+        background: #fff;
+        flex-direction: start;
+        border-bottom: .1rem solid #E5E7EB;
+        width: calc(100% - 20rem);
+        position: fixed;
+        z-index: 999;
+        left: 20rem;
+    }
+    
+    .title-body {
+        width: 190px;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 30px;
+    }
+    
+    .top_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 300px;
+        height: 80px;
+        background: #fff;
+        padding: 20px;
+        top: 10px;
+    }
+    
+    .top_content {
+        position: relative;
+        width: 70px;
+        align-items: center;
+        height: 50px;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    
+    .top_content_bell {
+        width: 55px;
+    }
+    
+    .top_content span {
+        position: absolute;
+        align-items: center;
+        width: 22px;
+        height: 22px;
+        background: red;
+        top: -9px;
+        left: 10px;
+        margin-left: 0px;
+        border-radius: 50%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        padding: 5px;
+    }
+    
+    .top_content_bell {
+        font-size: 26px;
+    }
+    
+    .dropdown_container {
+        width: 120px;
+        height: auto;
+        position: relative;
+    }
+    
+    .dropdown_industries {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        width: 100px;
+        justify-content: flex-start;
+    }
+    
+    .dropdown_industries p {
+        font-size: 20px;
+    }
+    
+    @media (max-width: 768px) {
+        .navtop_container {
+            width: 100%;
+            left: 5rem;
+            padding: 10px;
+            flex-direction: column;
+        }
+        /* .top_container {
+        width: 250px;
+        justify-content: flex-start;
+    }
+    .dropdown_container {
+        width: 200;
+    }
+    .title-body {
+        width: 100px;
+    }
+    .top_content {
+        width: 30px;
+    }
+    .top_content_bell {
+        width: 30px;
+    }
+    .dropdown_container {
+        width: 130px;
+    }
+    .dropdown_industries p {
+        font-size: 16px;
+    }*/
+    }

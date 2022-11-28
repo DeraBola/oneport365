@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import "https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+html,
+bdy {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0;
+    height: 100%;
+}
