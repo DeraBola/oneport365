@@ -154,8 +154,7 @@
      .modalContainer {
          width: 300px;
          padding: 20px;
-         top: -70px;
-         position: absolute;
+         top: -80px;
      }
      .drop_box {
          padding: 16px;

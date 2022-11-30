@@ -181,12 +181,4 @@
     .request_doc {
         margin-right: 20px;
     }
-    .dropzone_file {
-        padding: 10px;
-        width: 250px;
-        display: block;
-    }
-    .dropzone_content {
-        width: 270px;
-    }
 }

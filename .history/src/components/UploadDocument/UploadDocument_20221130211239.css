@@ -165,7 +165,7 @@
         padding: 10px;
         width: 300px;
         background: #fff;
-        position: relative;
+        p
     }
     .loaded_document_top {
         width: 300px;
@@ -180,13 +180,5 @@
     }
     .request_doc {
         margin-right: 20px;
-    }
-    .dropzone_file {
-        padding: 10px;
-        width: 250px;
-        display: block;
-    }
-    .dropzone_content {
-        width: 270px;
     }
 }
