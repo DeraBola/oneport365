@@ -162,11 +162,7 @@
          justify-content: center;
      }
      .dragdrop_text {
-         width: 230px;
+         width: 670px;
          height: 40px;
-     }
-     .drop_box p {
-         width: 210px;
-         font-size: 14px;
      }
  }

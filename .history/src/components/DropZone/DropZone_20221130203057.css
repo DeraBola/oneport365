@@ -168,5 +168,9 @@
      .drop_box p {
          width: 210px;
          font-size: 14px;
+         line-height: 20px;
+         display: flex;
+         align-items: flex-start;
+         color: #111827;
      }
  }

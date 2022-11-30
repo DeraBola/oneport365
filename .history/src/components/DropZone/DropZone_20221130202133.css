@@ -153,20 +153,14 @@
  @media (max-width: 450px) {
      .modalContainer {
          width: 300px;
-         padding: 20px;
      }
      .drop_box {
          padding: 16px;
-         width: 250px;
+         width: 280px;
          height: 100px;
+         background: #FAFFFB;
+         border: 1px solid #E5E7EB;
+         border-radius: 6px;
          justify-content: center;
-     }
-     .dragdrop_text {
-         width: 230px;
-         height: 40px;
-     }
-     .drop_box p {
-         width: 210px;
-         font-size: 14px;
      }
  }
