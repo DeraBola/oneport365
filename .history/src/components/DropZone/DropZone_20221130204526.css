@@ -158,24 +158,22 @@
      .drop_box {
          padding: 16px;
          width: 250px;
-         height: 120px;
+         height: 100px;
          justify-content: center;
      }
      .dragdrop_text {
          width: 230px;
          height: 40px;
+         margin: ;
      }
      .drop_box p {
          width: 210px;
          font-size: 14px;
      }
-     .drop_box p span {
-         margin-right: 0px;
-     }
      .drop_box h2 {
          font-size: 14px;
          color: #6B7280;
          width: 210px;
-         margin-top: 25px;
+         margin-top: 20px;
      }
  }
