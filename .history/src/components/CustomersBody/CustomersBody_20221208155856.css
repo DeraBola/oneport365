@@ -91,14 +91,9 @@
      text-decoration: none;
  }
  
- .ship-box {
-     background-color: #3ab44a;
-     color: #fff;
-     border: .1rem solid #E5E7EB;
-     padding: 10px;
-     border-radius: 5px;
- }
+ .ship-box {}
  
+ .ship-box,
  .edit-box {
      border: .1rem solid #E5E7EB;
      color: #000;

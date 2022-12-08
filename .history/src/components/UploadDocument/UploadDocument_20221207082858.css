@@ -181,9 +181,8 @@
     .request_doc {
         margin-right: 20px;
     }
-    .uploaded_doc {
-        background: #3AB44A;
-        color: #fff;
+    .uploaded_doc p {
+        background: ;
     }
     .dropzone_file {
         padding: 10px;

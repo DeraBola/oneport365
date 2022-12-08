@@ -181,7 +181,7 @@
     .request_doc {
         margin-right: 20px;
     }
-    .uploaded_doc {
+    .uploaded_doc p {
         background: #3AB44A;
         color: #fff;
     }

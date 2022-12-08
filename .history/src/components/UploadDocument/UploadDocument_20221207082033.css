@@ -181,10 +181,7 @@
     .request_doc {
         margin-right: 20px;
     }
-    .uploaded_doc {
-        background: #3AB44A;
-        color: #fff;
-    }
+    {}
     .dropzone_file {
         padding: 10px;
         width: 250px;
